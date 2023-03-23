@@ -8,7 +8,7 @@ import './style.scss';
 
 function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
+    <Navbar expand="lg" bg="success" variant="dark" sticky="top" collapseOnSelect>
       <Container>
         <Navbar.Brand as={NavLink} to="/">Lea's portefolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

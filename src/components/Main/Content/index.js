@@ -1,36 +1,132 @@
 import './style.scss';
 import Card from 'react-bootstrap/Card';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function Content() {
   return (
     <div className="Content">
-        <h1 className="Content-title">Title</h1>
-        <h2 className="Content-description">Decription</h2>
+        <h1 className="Content-title">Hello World</h1>
+
+        <h2 className="Content-description">Here I am, Lea, brand new ReactJS Developper. Have a look on my Projects, and my Resume. 
+        I would be happy to get in touch with you to share my experience</h2>
+
+        <h3 className="Content-question">How did I get to Web Developpement ?</h3>
+
         <div className="Content-experience">
-        <Card style={{ width: '18rem' }}>
+        <AnimationOnScroll initiallyVisible={true} duration={5} animateIn="animate__swing">
+        <Card style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                <Card.Title>February - March 2023</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">ReactJS Developper | @Homeoffice</Card.Subtitle>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                "Fit Work": Application concerning best practise at work 
+                Build this application from scratch of an MVP with Agile method.
+                Responsible of the good implementation, Pull Request and Code Review. 
                 </Card.Text>
-            <Card.Link href="#">Card rdgfsfdLink</Card.Link>
-            <Card.Link href="#">Another Link</Card.Link>
+            <Card.Link href="#">Got to Project</Card.Link>
+            <Card.Link href="#">Go to Repo</Card.Link>
             </Card.Body>
         </Card>
-                <Card style={{ width: '18rem' }}>
+        </AnimationOnScroll>
+        <AnimationOnScroll initiallyVisible={true} duration={5} animateIn="animate__swing">
+
+                <Card style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                <Card.Title>2020 - 2022</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Supply Chain | Project Manager | @Lidl Headquarter</Card.Subtitle>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                <li>Logistics planning of orders and deliveries at national level</li>
+                <li>Knowledge of logistics processes (truck filling, optimization of logistics routes).</li>
+                <li>Supplier care and close communication with purchasing department </li>
+                <li>Team Management</li>
+                <li>Project Management & analytics</li>
                 </Card.Text>
-            <Card.Link href="#">Card Link</Card.Link>
-            <Card.Link href="#">Another Link</Card.Link>
+            <Card.Link href="#">Go to Resume</Card.Link>
             </Card.Body>
         </Card>
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+
+        <Card style={{ width: '25rem', height: '25rem' }}>
+            <Card.Body>
+                <Card.Title>2015 - 2019</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Supply Chain | Manager | @Lidl Warehouse</Card.Subtitle>
+                <Card.Text>
+                <li>Daily supplier orders, trend calculation, sales forecast, Stores openings support, inventory control</li>
+                <li>External Storage Organisation"</li>
+                <li>Maintenance of stocks in an external warehouse for sensitive products: fruits, vegetables and flowers (90 stores)</li>
+
+                </Card.Text>
+            <Card.Link href="#">Go to Resume</Card.Link>
+            </Card.Body>
+        </Card>
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+
+        <Card style={{ width: '25rem', height: '25rem' }}>
+            <Card.Body>
+                <Card.Title>2013 - 2014</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Lidl Headquarter</Card.Subtitle>
+                <Card.Text>
+                <li>Processes Translations</li>
+                <li>Organization of seminars</li>
+                <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                </Card.Text>
+            <Card.Link href="#">Go to Resume</Card.Link>
+            </Card.Body>
+        </Card>
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+
+        <Card style={{ width: '25rem', height: '25rem' }}>
+            <Card.Body>
+                <Card.Title>2010 - 2013</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Fast Food | Employee | @McDonald's</Card.Subtitle>
+                <Card.Text>
+                <li>Processes Translations</li>
+                <li>Organization of seminars</li>
+                <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                </Card.Text>
+            <Card.Link href="#">Go to Resume</Card.Link>
+            </Card.Body>
+        </Card>
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+
+        <Card style={{ width: '25rem', height: '25rem' }}>
+            <Card.Body>
+                <Card.Title>2013</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Marketing | Internship | @France Plongée, Thailand</Card.Subtitle>
+                <Card.Text>
+                <li>Processes Translations</li>
+                <li>Organization of seminars</li>
+                <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                </Card.Text>
+            <Card.Link href="#">Go to Resume</Card.Link>
+            </Card.Body>
+        </Card>
+        </AnimationOnScroll>
+
+        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+
+        <Card style={{ width: '25rem', height: '25rem' }}>
+            <Card.Body>
+                <Card.Title>2012</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Otto Bock</Card.Subtitle>
+                <Card.Text>
+                <li>Processes Translations</li>
+                <li>Organization of seminars</li>
+                <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                </Card.Text>
+            <Card.Link href="#">Go to Resume</Card.Link>
+            </Card.Body>
+        </Card>
+        </AnimationOnScroll>
+
         </div>
     </div>
   );
