@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,19 +10,19 @@ function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Lea's portefolio</Navbar.Brand>
+        <Navbar.Brand as={NavLink} to="/">Lea's portefolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">HOME</Nav.Link>
-            <Nav.Link href="#pricing">MY RESUME</Nav.Link>
+          <Nav className="me-auto" onSelect={(eventKey) => console.log(eventKey)}>
+            <Nav.Link as={NavLink} to="/" eventKey="Home">HOME</Nav.Link>
+            <Nav.Link as={NavLink} to="/my-resume" eventKey="Resume">MY RESUME</Nav.Link>
             <NavDropdown title="MY PROJECTS" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Fit Work</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="#action/3.1" eventKey="Project">Fit Work</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2"  eventKey="Project">
               Search GitHub Profils
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="#action/3.4"  eventKey="Project">
                 Reveday
               </NavDropdown.Item>
             </NavDropdown>
