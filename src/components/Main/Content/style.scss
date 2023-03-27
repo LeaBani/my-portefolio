@@ -2,20 +2,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 4rem;
     
     &-title{
-        margin: 2rem;
+        margin: 6rem;
     }
 
     &-description{
-        margin: 2rem;
+        margin: 6rem;
     }
     &-question{
-        margin: 2rem;
+        margin: 10rem;
     }
     &-experience{
-        margin: 2rem;
-        
+        &-list{
+            margin: 2rem;
+            margin-bottom: 4rem;
+        }
+    
         &-card{
             margin: 2rem;
         }
