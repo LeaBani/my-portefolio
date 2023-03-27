@@ -1,17 +1,47 @@
 import './style.scss';
 import Card from 'react-bootstrap/Card';
 
+import { useEffect } from 'react';
+import {
+  motion,
+  useAnimation,
+} from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+
 function Content() {
+
+    const { ref, inView } = useInView();
+    const animation = useAnimation();
+
+    useEffect(() => {
+        if (inView) {
+            animation.start({
+                x: 0,
+                transition: {
+                    type: 'spring', duration: 2,  bounce: 0.5,
+                }
+            });
+        }
+        if (!inView) {
+            animation.start({x: '-100vw'})
+        }
+
+    },[inView, animation]);
+
   return (
     <div className="Content">
+
         <h1 className="Content-title">Hello World</h1>
 
         <h2 className="Content-description">Here I am, Lea, brand new ReactJS Developper. Have a look on my Projects, and my Resume. 
         I would be happy to get in touch with you to share my experience</h2>
 
         <h3 className="Content-question">How did I get to Web Developpement ?</h3>
-
-        <div className="Content-experience">
+        <div className="Content-experience" ref={ref}>
+        <motion.div 
+            className="Content-experience-list"
+            animate={animation}
+        >
         <Card className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
                 <Card.Title>February - March 2023</Card.Title>
@@ -40,6 +70,7 @@ function Content() {
             <Card.Link href="#">Go to Resume</Card.Link>
             </Card.Body>
         </Card>
+        
         <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
                 <Card.Title>2015 - 2019</Card.Title>
@@ -104,7 +135,7 @@ function Content() {
             <Card.Link href="#">Go to Resume</Card.Link>
             </Card.Body>
         </Card>
-
+        </motion.div>
         </div>
     </div>
   );
