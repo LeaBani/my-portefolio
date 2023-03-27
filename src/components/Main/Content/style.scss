@@ -1,0 +1,23 @@
+.Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &-title{
+        margin: 2rem;
+    }
+
+    &-description{
+        margin: 2rem;
+    }
+    &-question{
+        margin: 2rem;
+    }
+    &-experience{
+        margin: 2rem;
+        
+        &-card{
+            margin: 2rem;
+        }
+    }
+}

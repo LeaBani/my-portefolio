@@ -1,6 +1,5 @@
 import './style.scss';
 import Card from 'react-bootstrap/Card';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function Content() {
   return (
@@ -13,8 +12,7 @@ function Content() {
         <h3 className="Content-question">How did I get to Web Developpement ?</h3>
 
         <div className="Content-experience">
-        <AnimationOnScroll initiallyVisible={true} duration={5} animateIn="animate__swing">
-        <Card style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
                 <Card.Title>February - March 2023</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">ReactJS Developper | @Homeoffice</Card.Subtitle>
@@ -27,10 +25,8 @@ function Content() {
             <Card.Link href="#">Go to Repo</Card.Link>
             </Card.Body>
         </Card>
-        </AnimationOnScroll>
-        <AnimationOnScroll initiallyVisible={true} duration={5} animateIn="animate__swing">
 
-                <Card style={{ width: '25rem', height: '25rem' }}>
+                <Card className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
                 <Card.Title>2020 - 2022</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Project Manager | @Lidl Headquarter</Card.Subtitle>
@@ -44,11 +40,7 @@ function Content() {
             <Card.Link href="#">Go to Resume</Card.Link>
             </Card.Body>
         </Card>
-        </AnimationOnScroll>
-
-        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
-
-        <Card style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
                 <Card.Title>2015 - 2019</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Manager | @Lidl Warehouse</Card.Subtitle>
@@ -61,11 +53,8 @@ function Content() {
             <Card.Link href="#">Go to Resume</Card.Link>
             </Card.Body>
         </Card>
-        </AnimationOnScroll>
 
-        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
-
-        <Card style={{ width: '25rem', height: '25rem' }}>
+        <Card  className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
                 <Card.Title>2013 - 2014</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Lidl Headquarter</Card.Subtitle>
@@ -77,11 +66,8 @@ function Content() {
             <Card.Link href="#">Go to Resume</Card.Link>
             </Card.Body>
         </Card>
-        </AnimationOnScroll>
 
-        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
-
-        <Card style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
                 <Card.Title>2010 - 2013</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Fast Food | Employee | @McDonald's</Card.Subtitle>
@@ -93,11 +79,7 @@ function Content() {
             <Card.Link href="#">Go to Resume</Card.Link>
             </Card.Body>
         </Card>
-        </AnimationOnScroll>
-
-        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
-
-        <Card style={{ width: '25rem', height: '25rem' }}>
+        <Card  className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
                 <Card.Title>2013</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Marketing | Internship | @France Plongée, Thailand</Card.Subtitle>
@@ -109,11 +91,8 @@ function Content() {
             <Card.Link href="#">Go to Resume</Card.Link>
             </Card.Body>
         </Card>
-        </AnimationOnScroll>
 
-        <AnimationOnScroll animateIn="animate__fadeInLeftBig">
-
-        <Card style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
             <Card.Body>
                 <Card.Title>2012</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Otto Bock</Card.Subtitle>
@@ -125,7 +104,6 @@ function Content() {
             <Card.Link href="#">Go to Resume</Card.Link>
             </Card.Body>
         </Card>
-        </AnimationOnScroll>
 
         </div>
     </div>
