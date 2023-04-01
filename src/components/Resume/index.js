@@ -1,5 +1,7 @@
 import './style.scss';
-import profile from '../../assets/image/profile.jpg'
+import profile from '../../assets/image/profile.jpg';
+import cvEnglish from '../../assets/cv/Lea-Bani-CV-2023-en.pdf';
+import cvFrench from '../../assets/cv/Lea-Bani-CV-2023-fr.pdf';
 
 import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
@@ -62,11 +64,11 @@ function Resume() {
     </div>
 
     <div className='Resume-download'>
-    <div className='Resume-download-item'>Download Resume in french</div>
-    <Button variant="outline-primary" onClick={() => handleClick('https://moncv', 'CV-Lea-Bani-FR')}>Download</Button>
+    <div className='Resume-download-item'>Download full Resume in french</div>
+    <Button variant="outline-primary" onClick={() => handleClick(cvFrench, 'CV-Lea-Bani-FR.pdf')}>Download</Button>
 
-    <div className='Resume-download-item'>Download Resume in english</div>
-    <Button variant="outline-primary" onClick={() => handleClick('https://moncv', 'CV-Lea-Bani-EN')}>Download</Button>
+    <div className='Resume-download-item'>Download full Resume in english</div>
+    <Button variant="outline-primary" onClick={() => handleClick(cvEnglish, 'CV-Lea-Bani-EN.pdf')}>Download</Button>
     </div>
     </div>
   );
