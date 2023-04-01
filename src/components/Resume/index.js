@@ -1,7 +1,9 @@
 import './style.scss';
+import profile from '../../assets/image/profile.jpg'
 
 import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
+import Image from 'react-bootstrap/Image';
 
 import fileDownload from 'js-file-download';
 import axios from 'axios';
@@ -19,6 +21,8 @@ function Resume() {
   return (
     <div className="Resume">
     <h1 className='Resume-title'>My Resume</h1>
+
+    <Image className='Resume-image' src={profile} thumbnail="true" roundedCircle="true"/>
 
     <div className='Resume-list'>
     <Accordion flush>
