@@ -12,6 +12,17 @@ import { useInView } from 'react-intersection-observer';
 import AnimatedText from './AnimatedText';
 import { Link } from 'react-router-dom';
 
+import js from '../../../assets/image/js.png';
+import node from '../../../assets/image/node.png';
+import html from '../../../assets/image/html.png';
+import react from '../../../assets/image/react.png';
+import sass from '../../../assets/image/sass.png';
+import psql from '../../../assets/image/psql.png';
+import bootstrap from '../../../assets/image/bootstrap.png';
+import git from '../../../assets/image/git.png';
+import css from '../../../assets/image/css.png';
+import { Image } from 'react-bootstrap';
+
 function Content() {
 
     // card animation
@@ -42,12 +53,25 @@ function Content() {
         I would be happy to get in touch with you to share my experience</h2>
 
         <h3 className="Content-question">How did I get to Web Developpement ?</h3>
+
+        <div className='Content-icon'>
+        <Image className='Content-icon-item' src={html}/>
+        <Image className='Content-icon-item' src={css}/>
+        <Image className='Content-icon-item' src={js}/>
+        <Image className='Content-icon-item' src={react}/>
+        <Image className='Content-icon-item' src={bootstrap}/>
+        <Image className='Content-icon-item' src={sass}/>
+        <Image className='Content-icon-item' src={node}/>
+        <Image className='Content-icon-item' src={psql}/>
+        <Image className='Content-icon-item' src={git}/>
+        </div>
+
         <div className="Content-experience" ref={ref}>
         <motion.div 
             className="Content-experience-list"
             animate={animation}
         >
-        <Card className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>February - March 2023</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">ReactJS Developper | @Homeoffice</Card.Subtitle>
@@ -60,7 +84,7 @@ function Content() {
             </Card.Body>
         </Card>
 
-                <Card className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
+                <Card className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2020 - 2022</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Project Manager | @Lidl Headquarter</Card.Subtitle>
@@ -75,7 +99,7 @@ function Content() {
             </Card.Body>
         </Card>
         
-        <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2015 - 2019</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Manager | @Lidl Warehouse</Card.Subtitle>
@@ -89,7 +113,7 @@ function Content() {
             </Card.Body>
         </Card>
 
-        <Card  className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
+        <Card  className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2013 - 2014</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Lidl Headquarter</Card.Subtitle>
@@ -102,7 +126,7 @@ function Content() {
             </Card.Body>
         </Card>
 
-        <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2010 - 2013</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Fast Food | Employee | @McDonald's</Card.Subtitle>
@@ -114,7 +138,7 @@ function Content() {
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
         </Card>
-        <Card  className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
+        <Card  className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2013</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Marketing | Internship | @France Plongée, Thailand</Card.Subtitle>
@@ -127,7 +151,7 @@ function Content() {
             </Card.Body>
         </Card>
 
-        <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2012</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Otto Bock</Card.Subtitle>
