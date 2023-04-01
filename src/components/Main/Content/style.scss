@@ -5,16 +5,20 @@
     margin-bottom: 4rem;
     
     &-title{
-        margin: 8rem 1rem 8rem 1rem;
+        margin: 14rem 1rem 6rem 1rem;
         overflow: hidden;
         display: flex;
+        font-weight: 800;
+        font-size: 3rem;
     }
 
     &-description{
         margin: 8rem 2rem 8rem 2rem;
+        text-align: justify;
     }
     &-question{
         margin: 8rem 2rem 8rem 2rem;
+        text-align: justify;
     }
     &-experience{
         margin: 2rem;
@@ -23,7 +27,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            
+            text-align: justify;
         }
     
         &-card{
@@ -35,5 +39,5 @@
 .button{
     position: absolute;
     bottom: 1rem;
-    
+
 }
