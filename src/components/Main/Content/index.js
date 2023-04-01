@@ -60,6 +60,7 @@ function Content() {
         <Image className='Content-icon-item' src={js}/>
         <Image className='Content-icon-item' src={react}/>
         <Image className='Content-icon-item' src={bootstrap}/>
+        <Image className='Content-icon-item' src={sass}/>
         <Image className='Content-icon-item' src={node}/>
         <Image className='Content-icon-item' src={psql}/>
         <Image className='Content-icon-item' src={git}/>
