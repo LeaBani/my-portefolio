@@ -1,5 +1,11 @@
 import './style.scss';
+
 import profile from '../../assets/image/profile.jpg';
+import github from '../../assets/image/github.png';
+import linkedin from '../../assets/image/linkedin.png';
+import twitter from '../../assets/image/twitter.png';
+import insta from '../../assets/image/insta.png';
+
 import cvEnglish from '../../assets/cv/Lea-Bani-CV-2023-en.pdf';
 import cvFrench from '../../assets/cv/Lea-Bani-CV-2023-fr.pdf';
 
@@ -9,6 +15,8 @@ import Image from 'react-bootstrap/Image';
 
 import fileDownload from 'js-file-download';
 import axios from 'axios';
+
+import { Link } from 'react-router-dom';
 
 function Resume() {
 
@@ -26,6 +34,13 @@ function Resume() {
 
     <Image className='Resume-image' src={profile} thumbnail="true" roundedCircle="true"/>
 
+    <div className='Resume-icon'>
+    <Link to='https://github.com/LeaBani'><Image className='Resume-icon-item' src={github} roundedCircle="true"/></Link> 
+    <Link to='https://www.linkedin.com/in/lea-bani/'><Image className='Resume-icon-item' src={linkedin} roundedCircle="true"/></Link>
+    <Link to='https://twitter.com/leabani7'><Image className='Resume-icon-item' src={twitter} roundedCircle="true"/></Link>
+    <Link to='https://www.instagram.com/lea_laila91940/'><Image className='Resume-icon-item' src={insta} roundedCircle="true"/></Link>
+    </div>
+
     <div className='Resume-list'>
     <Accordion flush>
       <Accordion.Item eventKey="0">
@@ -33,7 +48,7 @@ function Resume() {
         <Accordion.Body>
         I started an apprenticeship on September 26th, 2022 so that I learnt the basics of web  development. During 5 months, we used different tools and programming languages to learn development: VSCode, Git, HTML, CSS, JavaScript, NodeJS, PostgreSQL and ReactJS.
         At the end of this full-time training, we have one month to build with our team an App/Web site (Minimum Viable Product) in Agile method with ReactJS in February. The training ends on March 2023.
-        We also covered the basics in SQL and NoSQL (as MongoDB). I am versatile and I enjoy learning new skills. 
+        We also covered the basics in SQL and NoSQL (as MongoDB). I am learning fast, and I love being confronted to new challenges! 
         I started my professional retraining to give a new impetus to my career.
         </Accordion.Body>
       </Accordion.Item>

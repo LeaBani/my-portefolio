@@ -8,8 +8,11 @@ import {
 } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
+import AnimatedText from './AnimatedText';
+
 function Content() {
 
+    // card animation
     const { ref, inView } = useInView();
     const animation = useAnimation();
 
@@ -27,11 +30,11 @@ function Content() {
         }
 
     },[inView, animation]);
-
+    
   return (
     <div className="Content">
 
-        <h1 className="Content-title">&#60; Hello World /&#62;</h1>
+        <AnimatedText text="&#60; Hello World /&#62;"/>
 
         <h2 className="Content-description">Here I am, Lea, brand new ReactJS Developper. Have a look on my Projects, and my Resume. 
         I would be happy to get in touch with you to share my experience</h2>

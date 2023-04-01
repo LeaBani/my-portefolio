@@ -10,6 +10,13 @@
         width: 18rem;
         margin: 2rem;
     }
+    &-icon{
+        display: inline-flex;
+        &-item{
+            width: 3rem;
+            margin: .5rem;
+        }
+    }
     &-list{
         margin: 3rem;
     }
