@@ -1,5 +1,6 @@
 import './style.scss';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 import { useEffect } from 'react';
 import {
@@ -9,6 +10,7 @@ import {
 import { useInView } from 'react-intersection-observer';
 
 import AnimatedText from './AnimatedText';
+import { Link } from 'react-router-dom';
 
 function Content() {
 
@@ -36,7 +38,7 @@ function Content() {
 
         <AnimatedText text="&#60; Hello World /&#62;"/>
 
-        <h2 className="Content-description">Here I am, Lea, brand new ReactJS Developper. Have a look on my Projects, and my Resume. 
+        <h2 className="Content-description">Here I am, Lea, brand new Web Developper. Have a look on my Projects, and my Resume. 
         I would be happy to get in touch with you to share my experience</h2>
 
         <h3 className="Content-question">How did I get to Web Developpement ?</h3>
@@ -54,8 +56,7 @@ function Content() {
                 Build this application from scratch of an MVP with Agile method.
                 Responsible of the good implementation, Pull Request and Code Review. 
                 </Card.Text>
-            <Card.Link href="#">Got to Project</Card.Link>
-            <Card.Link href="#">Go to Repo</Card.Link>
+                    <Button className="button" as={Link} to="https://fitwork-app.netlify.app">Got to Project</Button>
             </Card.Body>
         </Card>
 
@@ -70,7 +71,7 @@ function Content() {
                 <li>Team Management</li>
                 <li>Project Management & analytics</li>
                 </Card.Text>
-            <Card.Link href="#">Go to Resume</Card.Link>
+                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
         </Card>
         
@@ -84,7 +85,7 @@ function Content() {
                 <li>Maintenance of stocks in an external warehouse for sensitive products: fruits, vegetables and flowers (90 stores)</li>
 
                 </Card.Text>
-            <Card.Link href="#">Go to Resume</Card.Link>
+                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
         </Card>
 
@@ -97,7 +98,7 @@ function Content() {
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
                 </Card.Text>
-            <Card.Link href="#">Go to Resume</Card.Link>
+                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
         </Card>
 
@@ -110,7 +111,7 @@ function Content() {
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
                 </Card.Text>
-            <Card.Link href="#">Go to Resume</Card.Link>
+                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
         </Card>
         <Card  className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
@@ -122,7 +123,7 @@ function Content() {
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
                 </Card.Text>
-            <Card.Link href="#">Go to Resume</Card.Link>
+                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
         </Card>
 
@@ -135,7 +136,7 @@ function Content() {
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
                 </Card.Text>
-            <Card.Link href="#">Go to Resume</Card.Link>
+                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
         </Card>
         </motion.div>
