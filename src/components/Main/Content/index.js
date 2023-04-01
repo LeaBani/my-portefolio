@@ -47,7 +47,7 @@ function Content() {
             className="Content-experience-list"
             animate={animation}
         >
-        <Card className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>February - March 2023</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">ReactJS Developper | @Homeoffice</Card.Subtitle>
@@ -60,7 +60,7 @@ function Content() {
             </Card.Body>
         </Card>
 
-                <Card className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
+                <Card className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2020 - 2022</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Project Manager | @Lidl Headquarter</Card.Subtitle>
@@ -75,7 +75,7 @@ function Content() {
             </Card.Body>
         </Card>
         
-        <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2015 - 2019</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Manager | @Lidl Warehouse</Card.Subtitle>
@@ -89,7 +89,7 @@ function Content() {
             </Card.Body>
         </Card>
 
-        <Card  className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
+        <Card  className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2013 - 2014</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Lidl Headquarter</Card.Subtitle>
@@ -102,7 +102,7 @@ function Content() {
             </Card.Body>
         </Card>
 
-        <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2010 - 2013</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Fast Food | Employee | @McDonald's</Card.Subtitle>
@@ -114,7 +114,7 @@ function Content() {
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
         </Card>
-        <Card  className="Content-experience-card" style={{ width: '25rem', height: '25rem' }}>
+        <Card  className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2013</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Marketing | Internship | @France Plongée, Thailand</Card.Subtitle>
@@ -127,7 +127,7 @@ function Content() {
             </Card.Body>
         </Card>
 
-        <Card className="Content-experience-card"  style={{ width: '25rem', height: '25rem' }}>
+        <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2012</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Otto Bock</Card.Subtitle>
