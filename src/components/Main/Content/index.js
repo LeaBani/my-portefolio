@@ -12,6 +12,17 @@ import { useInView } from 'react-intersection-observer';
 import AnimatedText from './AnimatedText';
 import { Link } from 'react-router-dom';
 
+import js from '../../../assets/image/js.png';
+import node from '../../../assets/image/node.png';
+import html from '../../../assets/image/html.png';
+import react from '../../../assets/image/react.png';
+import sass from '../../../assets/image/sass.png';
+import psql from '../../../assets/image/psql.png';
+import bootstrap from '../../../assets/image/bootstrap.png';
+import git from '../../../assets/image/git.png';
+import css from '../../../assets/image/css.png';
+import { Image } from 'react-bootstrap';
+
 function Content() {
 
     // card animation
@@ -42,6 +53,18 @@ function Content() {
         I would be happy to get in touch with you to share my experience</h2>
 
         <h3 className="Content-question">How did I get to Web Developpement ?</h3>
+
+        <div className='Content-icon'>
+        <Image className='Content-icon-item' src={html}/>
+        <Image className='Content-icon-item' src={css}/>
+        <Image className='Content-icon-item' src={js}/>
+        <Image className='Content-icon-item' src={react}/>
+        <Image className='Content-icon-item' src={bootstrap}/>
+        <Image className='Content-icon-item' src={node}/>
+        <Image className='Content-icon-item' src={psql}/>
+        <Image className='Content-icon-item' src={git}/>
+        </div>
+
         <div className="Content-experience" ref={ref}>
         <motion.div 
             className="Content-experience-list"
