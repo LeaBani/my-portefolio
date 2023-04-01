@@ -1,0 +1,36 @@
+.Resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title{
+        margin: 3rem;
+    }
+    &-image{
+        width: 18rem;
+        margin: 2rem;
+    }
+    &-icon{
+        display: inline-flex;
+        &-item{
+            width: 3rem;
+            margin: .5rem;
+        }
+    }
+    &-list{
+        margin: 3rem;
+        text-align: justify;
+    }
+    &-end{
+        margin: 2rem;
+        text-align: justify;
+    }
+    &-download{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        &-item{
+            margin: 1rem;
+        }
+    }
+}

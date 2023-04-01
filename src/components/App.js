@@ -1,13 +1,13 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-import Header from './Header';
 import Resume from './Resume';
 import Content from './Main/Content';
+import NavBar from './Header/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <NavBar/>
 
       <Routes>
         <Route path="/" element={<Content />} />

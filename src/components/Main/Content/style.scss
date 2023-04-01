@@ -5,23 +5,39 @@
     margin-bottom: 4rem;
     
     &-title{
-        margin: 6rem;
+        margin: 14rem 1rem 6rem 1rem;
+        overflow: hidden;
+        display: flex;
+        font-weight: 800;
+        font-size: 3rem;
     }
 
     &-description{
-        margin: 6rem;
+        margin: 8rem 2rem 8rem 2rem;
+        text-align: justify;
     }
     &-question{
-        margin: 10rem;
+        margin: 8rem 2rem 8rem 2rem;
+        text-align: justify;
     }
     &-experience{
+        margin: 2rem;
         &-list{
-            margin: 2rem;
             margin-bottom: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: justify;
         }
     
         &-card{
-            margin: 2rem;
+            margin-bottom: 2rem;
         }
     }
+}
+
+.button{
+    position: absolute;
+    bottom: 1rem;
+
 }
