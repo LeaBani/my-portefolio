@@ -1,9 +1,11 @@
 import './App.scss';
-import { Routes, Route, Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Resume from './Resume';
 import Content from './Main/Content';
 import NavBar from './Header/NavBar';
 import ScrollToTop from './ScrollToTop';
+import Contact from './Contact';
+import Projects from './Projects';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Content />} />
         <Route path="/my-resume" element={<Resume />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
   );

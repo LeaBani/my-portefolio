@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 function AnimatedText({ text }) {
 
-// h1 animation woth framermotion
+// h1 animation with framermotion
 const words = text.split("");
 
 const container = {
     hidden: { opacity: 0 },
     visible: (i=1) => ({
         opacity: 1,
-        transition: {staggerChildren: 0.20, delayChildren: 0.08 * i},
+        transition: {staggerChildren: 0.14, delayChildren: 0.04 * i},
     }),
 }
 
