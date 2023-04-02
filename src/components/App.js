@@ -6,6 +6,7 @@ import NavBar from './Header/NavBar';
 import ScrollToTop from './ScrollToTop';
 import Contact from './Contact';
 import Projects from './Projects';
+import Error from './Error';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/my-resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/*" element={<Error />} />
       </Routes>
     </div>
   );

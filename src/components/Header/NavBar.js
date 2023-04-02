@@ -23,7 +23,7 @@ function NavBar() {
               <NavDropdown.Item as={NavLink} to="https://trouve-ton-profil-github.netlify.app" eventKey="Project 2">
               Go to Search GitHub Profile
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/" eventKey="Project 3">
+              <NavDropdown.Item as={NavLink} to="/reveday" eventKey="Project 3">
                 Go to Reveday
               </NavDropdown.Item>
             </NavDropdown>
