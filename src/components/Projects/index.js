@@ -21,7 +21,7 @@ function Projects() {
             <Card.Text>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
-                <div className='Projects-card-label'>
+                <span className='Projects-card-label'>
                     <Badge bg="primary">
                         React
                     </Badge>
@@ -46,7 +46,7 @@ function Projects() {
                     <Badge bg="primary">
                         Express
                     </Badge>
-                </div>
+                </span>
             </Card.Text>
             <Button variant="primary">Got to repository</Button>
             </Card.Body>
@@ -59,7 +59,7 @@ function Projects() {
             <Card.Text>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
-                <div className='Projects-card-label'>
+                <span className='Projects-card-label'>
                     <Badge bg="primary">
                         React
                     </Badge>
@@ -69,7 +69,7 @@ function Projects() {
                     <Badge bg="primary">
                         API
                     </Badge>
-                </div>
+                </span>
             </Card.Text>
             <Button variant="primary">Go to repository</Button>
             </Card.Body>
@@ -82,11 +82,11 @@ function Projects() {
             <Card.Text>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
-                <div className='Projects-card-label'>
+                <span className='Projects-card-label'>
                     <Badge bg="primary">
                         React
                     </Badge>
-                </div>
+                </span>
             </Card.Text>
             <Button variant="primary">Go to repository</Button>
             </Card.Body>
