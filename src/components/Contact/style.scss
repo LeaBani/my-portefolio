@@ -8,12 +8,23 @@
     }
 
     &-form{
-        width: 50rem;
+       width: 50rem;
     }
     @media screen and (max-width: 800px) {
         &-form{
             width: auto;
         }
+    }
+    &-alert{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        text-align: center;
+    }
+    &-image{
+        width: 5rem;
+        margin: 1rem;
     }
 
 }

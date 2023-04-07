@@ -20,9 +20,14 @@
     }
 
     &-description{
-        margin: 8rem 2rem 8rem 2rem;
+        margin: 8rem 8rem 8rem 8rem;
         text-align: justify;
     }
+    @media screen and (max-width: 600px) {
+        &-description {
+            margin: 6rem 2rem 2rem 2rem;
+        }
+        }
     &-question{
         margin: 8rem 2rem 8rem 2rem;
         text-align: justify;
