@@ -66,6 +66,14 @@
     
         &-card{
             margin: 1rem;
+            
+            &-item{
+                position: absolute;
+                bottom: 1.3rem;
+                right: 1.7rem;
+                max-width: 7rem;
+                max-height: 4rem;
+            }
         }
 
         &-card:hover{

@@ -21,6 +21,11 @@ import psql from '../../assets/image/psql.png';
 import bootstrap from '../../assets/image/bootstrap.png';
 import git from '../../assets/image/git.png';
 import css from '../../assets/image/css.png';
+
+import ob from '../../assets/image/work/ob.png';
+import lidl from '../../assets/image/work/lidl.png';
+import mcdo from '../../assets/image/work/McDo.png';
+
 import { Image } from 'react-bootstrap';
 
 
@@ -80,6 +85,7 @@ function Content({isDark}) {
                 "Fit Work": Application concerning best practise at work 
                 Build this application from scratch of an MVP with Agile method.
                 Responsible of the good implementation, Pull Request and Code Review. 
+                
                 </Card.Text>
                     <Button className="button" as={Link} to="https://fitwork-app.netlify.app">Got to Project</Button>
             </Card.Body>
@@ -95,6 +101,7 @@ function Content({isDark}) {
                 <li>Supplier care and close communication with purchasing department </li>
                 <li>Team Management</li>
                 <li>Project Management & analytics</li>
+                <Image className='Content-experience-card-item' src={lidl}/>
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
@@ -108,6 +115,7 @@ function Content({isDark}) {
                 <li>Daily supplier orders, trend calculation, sales forecast, Stores openings support, inventory control</li>
                 <li>External Storage Organisation"</li>
                 <li>Maintenance of stocks in an external warehouse for sensitive products: fruits, vegetables and flowers (90 stores)</li>
+                <Image className='Content-experience-card-item' src={lidl}/>
 
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
@@ -122,6 +130,8 @@ function Content({isDark}) {
                 <li>Processes Translations</li>
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                <Image className='Content-experience-card-item' src={lidl}/>
+
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
@@ -135,6 +145,8 @@ function Content({isDark}) {
                 <li>Processes Translations</li>
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                <Image className='Content-experience-card-item' src={mcdo}/>
+
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
@@ -147,6 +159,7 @@ function Content({isDark}) {
                 <li>Processes Translations</li>
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
@@ -160,6 +173,8 @@ function Content({isDark}) {
                 <li>Processes Translations</li>
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                <Image className='Content-experience-card-item' src={ob}/>
+
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
