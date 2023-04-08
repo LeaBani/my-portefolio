@@ -16,10 +16,10 @@ function Footer() {
     <div className="Footer">
 
         <div className='Footer-icon'>
-            <Link to='https://github.com/LeaBani'><FaGithub className='Resume-icon-item' src={github} roundedCircle="true"/></Link> 
-            <Link to='https://www.linkedin.com/in/lea-bani/'><FaLinkedin className='Resume-icon-item' src={linkedin} roundedCircle="true"/></Link>
-            <Link to='https://twitter.com/leabani7'><FaTwitter className='Resume-icon-item' src={twitter} roundedCircle="true"/></Link>
-            <Link to='https://www.instagram.com/lea_laila91940/'><FaInstagram className='Resume-icon-item' src={insta} roundedCircle="true"/></Link>
+            <Link to='https://github.com/LeaBani'><FaGithub className='Resume-icon-item' src={github}/></Link> 
+            <Link to='https://www.linkedin.com/in/lea-bani/'><FaLinkedin className='Resume-icon-item' src={linkedin}/></Link>
+            <Link to='https://twitter.com/leabani7'><FaTwitter className='Resume-icon-item' src={twitter}/></Link>
+            <Link to='https://www.instagram.com/lea_laila91940/'><FaInstagram className='Resume-icon-item' src={insta}/></Link>
         </div>
 
         <div className='Footer-text'>Created by Lea Bani | March 2023</div>
