@@ -11,7 +11,7 @@ import Projects from './Projects';
 import Error from './Error';
 import Footer from './Footer';
 
-import { FaMoon, FaToggleOff, FaToggleOn } from "react-icons/fa";
+import { FaToggleOff, FaToggleOn } from "react-icons/fa";
 
 function App() {
 
