@@ -12,19 +12,19 @@ import { useInView } from 'react-intersection-observer';
 import AnimatedText from './AnimatedText';
 import { Link } from 'react-router-dom';
 
-import js from '../../../assets/image/js.png';
-import node from '../../../assets/image/node.png';
-import html from '../../../assets/image/html.png';
-import react from '../../../assets/image/react.png';
-import sass from '../../../assets/image/sass.png';
-import psql from '../../../assets/image/psql.png';
-import bootstrap from '../../../assets/image/bootstrap.png';
-import git from '../../../assets/image/git.png';
-import css from '../../../assets/image/css.png';
+import js from '../../assets/image/js.png';
+import node from '../../assets/image/node.png';
+import html from '../../assets/image/html.png';
+import react from '../../assets/image/react.png';
+import sass from '../../assets/image/sass.png';
+import psql from '../../assets/image/psql.png';
+import bootstrap from '../../assets/image/bootstrap.png';
+import git from '../../assets/image/git.png';
+import css from '../../assets/image/css.png';
 import { Image } from 'react-bootstrap';
 
 
-function Content() {
+function Content({isDark}) {
 
     // card animation
     const { ref, inView } = useInView();
@@ -48,7 +48,7 @@ function Content() {
   return (
     <div className="Content">
 
-        <AnimatedText text="&#60; Hello World /&#62;"/>
+        <AnimatedText isDark={isDark} text="&#60; Hello World /&#62;"/>
 
         <h2 className="Content-description">Here I am, Lea, brand new Web Developper. Have a look on my Projects, and my Resume. 
         I would be happy to get in touch with you to share my experience</h2>

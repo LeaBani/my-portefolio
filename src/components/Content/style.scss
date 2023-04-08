@@ -1,4 +1,4 @@
-@use '../../../styles/vars' as v;
+@use '../../styles/vars' as v;
 
 .Content{
     display: flex;
@@ -11,8 +11,15 @@
         overflow: hidden;
         display: flex;
         font-weight: 800;
-        font-size: 2.7rem;  
-        color: v.$success;
+        font-size: 2.7rem;
+
+        &-dark{
+            color: v.$info;
+        }
+        &-light{
+            color: v.$secondary;
+        }
+        
     }
     
     /* Media Queries => gestion du responsive */
@@ -59,6 +66,12 @@
     
         &-card{
             margin: 1rem;
+        }
+
+        &-card:hover{
+            background-color: v.$light;
+            box-shadow: 4px 4px v.$warning;
+            transition-duration: 800ms;
         }
     }
     &-progress{
