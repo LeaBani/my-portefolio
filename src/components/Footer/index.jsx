@@ -9,9 +9,9 @@ import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 import './style.scss';
 
-function Footer() {
+function Footer({isDark}) {
   return (
-    <div className="Footer">
+    <div className={isDark ? "Footer Footer-dark" : "Footer Footer-light"}>
 
         <div className='Footer-icon'>
             <Link to='https://github.com/LeaBani'><FaGithub className='Resume-icon-item' src={github}/></Link> 
