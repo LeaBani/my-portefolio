@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-import { Image } from "react-bootstrap";
-
 import github from '../../assets/image/github.png';
 import linkedin from '../../assets/image/linkedin.png';
 import twitter from '../../assets/image/twitter.png';
