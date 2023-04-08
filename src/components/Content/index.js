@@ -55,11 +55,6 @@ function Content({isDark}) {
 
         <AnimatedText isDark={isDark} text="&#60; Hello World /&#62;"/>
 
-        <h2 className="Content-description">Here I am, Lea, brand new Web Developper. Have a look on my Projects, and my Resume. 
-        I would be happy to get in touch with you to share my experience</h2>
-
-        <h3 className="Content-question">How did I get to Web Developpement ?</h3>
-
         <div className='Content-icon'>
         <Image className='Content-icon-item' src={html}/>
         <Image className='Content-icon-item' src={css}/>
@@ -71,6 +66,11 @@ function Content({isDark}) {
         <Image className='Content-icon-item' src={psql}/>
         <Image className='Content-icon-item' src={git}/>
         </div>
+        <h2 className="Content-description">Here I am, Lea, brand new Web Developper. Have a look on my Projects, and my Resume. 
+        I would be happy to get in touch with you to share my experience</h2>
+
+        <h3 className="Content-question">How did I get to Web Developpement ?</h3>
+
 
         <div className="Content-experience" ref={ref}>
         <motion.div 
