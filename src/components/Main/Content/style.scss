@@ -58,6 +58,11 @@
             margin: 1rem;
         }
     }
+    &-progress{
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 1rem;
+    }
 }
 
 .button{

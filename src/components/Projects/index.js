@@ -19,33 +19,33 @@ function Projects() {
         <Card className='Projects-card' style={{ width: '18rem', height: '31rem' }}>
             <Card.Img variant="top" src={fitwork} />
             <Card.Body>
-            <Card.Title as={Link} to="https://fitwork-app.netlify.app/" className='Projects-card-title'># 1 Fitwork</Card.Title>
+            <Card.Title as={Link} to="https://fitwork-app.netlify.app/" className='Projects-card-title'># 1 Fit Work</Card.Title>
             <Card.Text className='Projects-card-text'>
                 Some quick example text to build on the card title and make up the
                 bulk of the card's content.
                 <span className='Projects-card-label'>
                     <Badge className="Projects-card-label-one" bg="primary">
-                        React
+                        ReactJS
                     </Badge>
                     <Badge className="Projects-card-label-one" bg="primary">
                         Redux
                     </Badge>
-                    <Badge className="Projects-card-label-one" bg="primary">
+                    <Badge className="Projects-card-label-one" bg="dark">
                         Sass
                     </Badge>
-                    <Badge className="Projects-card-label-one" bg="primary">
+                    <Badge className="Projects-card-label-one" bg="dark">
                         Bootstrap
                     </Badge>
-                    <Badge className="Projects-card-label-one" bg="primary">
+                    <Badge className="Projects-card-label-one" bg="secondary">
                         NodeJS
                     </Badge>
-                    <Badge className="Projects-card-label-one" bg="primary">
+                    <Badge className="Projects-card-label-one" bg="secondary">
                         Sqitch
                     </Badge>
-                    <Badge className="Projects-card-label-one" bg="primary">
+                    <Badge className="Projects-card-label-one" bg="success">
                         PostgreSQL
                     </Badge>
-                    <Badge className="Projects-card-label-one" bg="primary">
+                    <Badge className="Projects-card-label-one" bg="secondary">
                         Express
                     </Badge>
                 </span>
@@ -63,12 +63,12 @@ function Projects() {
                 bulk of the card's content.
                 <span className='Projects-card-label'>
                     <Badge className="Projects-card-label-one"  bg="primary">
-                        React
+                        ReactJS
                     </Badge>
-                    <Badge className="Projects-card-label-one"  bg="primary">
+                    <Badge className="Projects-card-label-one"  bg="dark">
                         Semantic UI
                     </Badge>
-                    <Badge className="Projects-card-label-one"  bg="primary">
+                    <Badge className="Projects-card-label-one"  bg="secondary">
                         API
                     </Badge>
                 </span>
@@ -86,12 +86,12 @@ function Projects() {
                 bulk of the card's content.
                 <span className='Projects-card-label'>
                     <Badge className="Projects-card-label-one"  bg="primary">
-                        React
+                        ReactJS
                     </Badge>
-                    <Badge className="Projects-card-label-one"  bg="primary">
-                        Proptypes
+                    <Badge className="Projects-card-label-one"  bg="danger">
+                        Prop-types
                     </Badge>
-                    <Badge className="Projects-card-label-one"  bg="primary">
+                    <Badge className="Projects-card-label-one"  bg="info">
                         POO
                     </Badge>
                 </span>
@@ -109,18 +109,18 @@ function Projects() {
                 bulk of the card's content.
                 <span className='Projects-card-label'>
                     <Badge className="Projects-card-label-one"  bg="primary">
-                        React
+                        ReactJS
                     </Badge>
-                    <Badge className="Projects-card-label-one"  bg="primary">
+                    <Badge className="Projects-card-label-one"  bg="dark">
                         Bootstrap
                     </Badge>
-                    <Badge className="Projects-card-label-one"  bg="primary">
+                    <Badge className="Projects-card-label-one"  bg="dark">
                         Framer Motion
                     </Badge>
                     <Badge className="Projects-card-label-one"  bg="primary">
                         Vite
                     </Badge>
-                    <Badge className="Projects-card-label-one"  bg="primary">
+                    <Badge className="Projects-card-label-one"  bg="danger">
                         EmailJS
                     </Badge>
                 </span>

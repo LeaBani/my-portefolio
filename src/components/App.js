@@ -7,6 +7,7 @@ import ScrollToTop from './ScrollToTop';
 import Contact from './Contact';
 import Projects from './Projects';
 import Error from './Error';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/*" element={<Error />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

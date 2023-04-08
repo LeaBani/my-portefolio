@@ -23,6 +23,7 @@ import git from '../../../assets/image/git.png';
 import css from '../../../assets/image/css.png';
 import { Image } from 'react-bootstrap';
 
+
 function Content() {
 
     // card animation
@@ -41,7 +42,7 @@ function Content() {
         if (!inView) {
             animation.start({x: '-100vw'})
         }
-
+        
     },[inView, animation]);
     
   return (
