@@ -21,10 +21,10 @@ function NavBar() {
               <NavDropdown.Divider />
               <NavDropdown.Item as={NavLink} to="https://fitwork-app.netlify.app/" eventKey="Project 1">Go to Fit Work</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="https://trouve-ton-profil-github.netlify.app" eventKey="Project 2">
-              Go to Search GitHub Profile
+              Go to GitHub Research
               </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/reveday" eventKey="Project 3">
-                Go to Reveday
+              <NavDropdown.Item as={NavLink} to="" eventKey="Project 3">
+                Go to Converter
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

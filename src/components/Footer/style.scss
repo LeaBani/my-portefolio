@@ -1,0 +1,22 @@
+@use '../../styles/vars' as v;
+
+.Footer{
+    background-color: v.$info;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 85%;
+    
+    &-icon{
+        display: inline-flex;
+    }
+
+    &-text{
+        font-size: small;
+    }
+
+}

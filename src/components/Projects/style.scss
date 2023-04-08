@@ -1,3 +1,5 @@
+@use '../../styles/vars' as v;
+
 .Projects{
     display: flex;
     flex-direction: column;
@@ -8,7 +10,7 @@
     }
 
     &-list{
-        margin-bottom: 4rem;
+        margin: 4rem 20rem 4rem 20rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -29,12 +31,13 @@
             position: absolute;
             top: 14rem;
             width: 16rem;
+
         }
 
         &-label{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: space-around;
             margin-top: 1rem;
             
             &-one{
@@ -47,5 +50,10 @@
             bottom: .5rem;
             left: 3rem;
         }
+    }
+
+    &-card:hover{
+        background-color: v.$light;
+        box-shadow: 3px 3px v.$dark;
     }
 }

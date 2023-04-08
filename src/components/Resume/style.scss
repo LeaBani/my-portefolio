@@ -20,7 +20,15 @@
     &-list{
         margin: 3rem;
         text-align: justify;
+        width: 40rem;
     }
+
+    @media screen and (max-width: 600px) {
+        &-list{
+            width: auto;
+        }
+    }
+
     &-end{
         margin: 2rem;
         text-align: justify;
@@ -29,6 +37,8 @@
         display: flex;
         flex-direction: column;
         margin: 2rem;
+        margin-bottom: 5rem;
+        
         &-item{
             margin: 1rem;
         }
