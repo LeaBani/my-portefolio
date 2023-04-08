@@ -1,7 +1,7 @@
 import './style.scss';
 import { motion } from 'framer-motion';
 
-function AnimatedText({ text }) {
+function AnimatedText({ text, isDark }) {
 
 // h1 animation with framermotion
 const words = text.split("");
@@ -35,7 +35,7 @@ const child = {
     }
 }
   return (
-    <motion.h1 className="Content-title" variants={container} initial="hidden" animate="visible">
+    <motion.h1 className={isDark ? "Content-title Content-title-dark" : "Content-title Content-title-light" }  variants={container} initial="hidden" animate="visible">
 
         {words.map((word, index) => (
             <motion.span 

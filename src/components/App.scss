@@ -1,6 +1,21 @@
 @use '../styles/vars' as v;
 
 .App {
-  font-family:  v.$font-sans;
-  background-color: v.$info;
+  
+  &-light{
+    font-family:  v.$font-sans;
+    background-color: v.$light;
+  }
+  &-dark{
+    font-family:  v.$font-sans;
+    background-color: v.$primary;
+  }
+
+  &-icon{
+    position: absolute;
+    right: 0;
+    margin: 1rem ;
+    font-size: 3rem;
+    color: v.$secondary;
+  }
 }

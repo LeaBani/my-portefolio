@@ -54,6 +54,7 @@
 
     &-card:hover{
         background-color: v.$light;
-        box-shadow: 3px 3px v.$dark;
+        box-shadow: 4px 4px v.$dark;
+        transition-duration: 800ms;
     }
 }

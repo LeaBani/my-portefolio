@@ -1,3 +1,5 @@
+@use '../../styles/vars' as v;
+
 .Resume{
     display: flex;
     flex-direction: column;
@@ -32,12 +34,14 @@
     &-end{
         margin: 2rem;
         text-align: justify;
+        color: v.$secondary;
     }
     &-download{
         display: flex;
         flex-direction: column;
         margin: 2rem;
         margin-bottom: 5rem;
+        color: v.$secondary;
         
         &-item{
             margin: 1rem;

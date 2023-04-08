@@ -1,7 +1,6 @@
 @use '../../styles/vars' as v;
 
 .Footer{
-    background-color: v.$info;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +9,14 @@
     left: 0;
     right: 0;
     opacity: 85%;
+
+    &-light{
+        background-color: v.$light;
+    }
+
+    &-dark{
+        background-color: v.$primary;
+    }
     
     &-icon{
         display: inline-flex;
