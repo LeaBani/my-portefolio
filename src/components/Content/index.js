@@ -88,7 +88,7 @@ function Content({isDark}) {
                 
                 
                 </Card.Text>
-                    <Button className="button" as={Link} to="/my-projects">Go to my Projects</Button>
+                    <Button className="button" as={Link} to="/projects">Go to my Projects</Button>
             </Card.Body>
         </Card>
 
