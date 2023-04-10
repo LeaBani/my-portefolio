@@ -32,6 +32,7 @@
     &-description{
         margin: 8rem 8rem 8rem 8rem;
         text-align: justify;
+        color: v.$secondary;
     }
     @media screen and (max-width: 600px) {
         &-description {
@@ -41,6 +42,8 @@
     &-question{
         margin: 8rem 2rem 8rem 2rem;
         text-align: justify;
+        color: v.$secondary;
+
     }
     &-icon{
         display: inline-flex;

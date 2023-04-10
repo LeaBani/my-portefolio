@@ -7,7 +7,7 @@ import './style.scss';
 
 function NavBar({isDark}) {
   return (
-    <Navbar expand="lg" bg={isDark ? "primary" : "secondary"} variant="light" sticky="top" collapseOnSelect>
+    <Navbar expand="lg" bg={isDark ? "primary" : "secondary"} variant={isDark ? "dark" : "light"} sticky="top" collapseOnSelect>
       <Container>
         <Navbar.Brand as={NavLink} to="/">Lea's portefolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
