@@ -76,12 +76,12 @@ function Projects() {
             </Card.Body>
         </Card>
 
-        <Card className='Projects-card' style={{ width: '18rem', height: '31rem' }}>
+        <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
             <Card.Img variant="top" />
             <Card.Body>
             <Card.Title as={Link} to="/" className='Projects-card-title'># 3 Converter</Card.Title>
             <Card.Text className='Projects-card-text'>
-                The converter permitted me to discover the OOP (Object Oriented Programming) with ReactJS. You can convert any avaiable currency. 
+                The converter permitted me to discover the OOP (Object Oriented Programming) with ReactJS. With this app, you can convert any avaiable currency. 
                 <span className='Projects-card-label'>
                     <Badge className="Projects-card-label-one"  bg="primary">
                         ReactJS
@@ -98,7 +98,7 @@ function Projects() {
             </Card.Body>
         </Card>
 
-        <Card className='Projects-card' style={{ width: '18rem', height: '31rem' }}>
+        <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
             <Card.Img variant="top" />
             <Card.Body>
             <Card.Title as={Link} to="/" className='Projects-card-title'># 4 My portefolio</Card.Title>
