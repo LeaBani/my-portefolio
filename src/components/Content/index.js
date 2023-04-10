@@ -66,7 +66,7 @@ function Content({isDark}) {
         <Image className='Content-icon-item' src={psql}/>
         <Image className='Content-icon-item' src={git}/>
         </div>
-        <h2 className="Content-description">Here I am, Lea, brand new Web Developper. Have a look on my Projects, and my Resume. 
+        <h2 className="Content-description">Here I am, Lea, Web Developper. Have a look on my Projects, and my Resume. 
         I would be happy to get in touch with you to share my experience</h2>
 
         <h3 className="Content-question">How did I get to Web Developpement ?</h3>
@@ -82,12 +82,13 @@ function Content({isDark}) {
                 <Card.Title>February - March 2023</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">ReactJS Developper | @Homeoffice</Card.Subtitle>
                 <Card.Text>
-                "Fit Work": Application concerning best practise at work 
-                Build this application from scratch of an MVP with Agile method.
-                Responsible of the good implementation, Pull Request and Code Review. 
+                <li>"Fit Work": Application concerning best practise at work </li>
+                <li>Build this application from scratch with Agile method.</li>
+                <li>Responsible of the good implementation, Pull Request and Code Review. </li>
+                
                 
                 </Card.Text>
-                    <Button className="button" as={Link} to="https://fitwork-app.netlify.app">Got to Project</Button>
+                    <Button className="button" as={Link} to="/my-projects">Go to my Projects</Button>
             </Card.Body>
         </Card>
 
@@ -127,7 +128,8 @@ function Content({isDark}) {
                 <Card.Title>2013 - 2014</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Lidl Headquarter</Card.Subtitle>
                 <Card.Text>
-                <li>Processes Translations</li>
+                <li>Project Manager Assistant: analytics, powerpoint</li>
+                <li>Processes Translations French to German/German to French</li>
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
                 <Image className='Content-experience-card-item' src={lidl}/>
@@ -142,9 +144,8 @@ function Content({isDark}) {
                 <Card.Title>2010 - 2013</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Fast Food | Employee | @McDonald's</Card.Subtitle>
                 <Card.Text>
-                <li>Processes Translations</li>
-                <li>Organization of seminars</li>
-                <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                <li>Cashier and customer care</li>
+                <li>Kitchen, organization, respect of the processes</li>
                 <Image className='Content-experience-card-item' src={mcdo}/>
 
                 </Card.Text>
@@ -156,9 +157,9 @@ function Content({isDark}) {
                 <Card.Title>2013</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Marketing | Internship | @France Plongée, Thailand</Card.Subtitle>
                 <Card.Text>
-                <li>Processes Translations</li>
-                <li>Organization of seminars</li>
-                <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                <li>Looking for partnership to build the "French connexion" on the island</li>
+                <li>Responsible for the shop, and material rental, customer care</li>
+                <li>Work on the social medias (Facebook, Website with Wordpress)</li>
 
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
@@ -168,11 +169,10 @@ function Content({isDark}) {
         <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>2012</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Otto Bock</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">Sales | Assistant | @Otto Bock</Card.Subtitle>
                 <Card.Text>
-                <li>Processes Translations</li>
-                <li>Organization of seminars</li>
-                <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
+                <li>Sending orders with SAP</li>
+                <li>Contact with the commercials, schedule events and meeting</li>
                 <Image className='Content-experience-card-item' src={ob}/>
 
                 </Card.Text>

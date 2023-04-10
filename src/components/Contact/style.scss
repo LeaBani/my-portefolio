@@ -1,3 +1,5 @@
+@use '../../styles/vars' as v;
+
 .Contact{
     display: flex;
     flex-direction: column;
@@ -6,11 +8,16 @@
 
     &-title{
         margin: 3rem;
+        color: v.$secondary;
     }
 
     &-form{
        width: 50rem;
        // margin-bottom: 40vh;
+       &-label{
+            color: v.$secondary;
+
+       }
     }
     @media screen and (max-width: 800px) {
         &-form{

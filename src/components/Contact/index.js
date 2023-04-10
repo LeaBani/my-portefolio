@@ -47,7 +47,7 @@ function Contact() {
           className="mb-3"
           controlId="namearea"
         >
-          <Form.Label>Your name</Form.Label>
+          <Form.Label className='Contact-form-label'>Your name</Form.Label>
           <Form.Control type="text" placeholder="name" name="user_name" />
         </Form.Group>
 
@@ -55,7 +55,7 @@ function Contact() {
           className="mb-3"
           controlId="emailarea"
         >
-          <Form.Label>Your Email address</Form.Label>
+          <Form.Label className='Contact-form-label'>Your Email address</Form.Label>
           <Form.Control type="email" placeholder="name@example.com" name="user_email" />
         </Form.Group>
 
@@ -63,7 +63,7 @@ function Contact() {
           className="mb-3"
           controlId="textarea"
         >
-          <Form.Label>Write your message here !</Form.Label>
+          <Form.Label className='Contact-form-label'>Write your message here !</Form.Label>
           <Form.Control as="textarea" rows={5} name="message" />
         </Form.Group>
 
