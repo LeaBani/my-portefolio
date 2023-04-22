@@ -32,13 +32,13 @@ function Resume() {
     <div className="Resume">
     <h1 className='Resume-title'>My Resume</h1>
 
-    <Image className='Resume-image' src={profile} thumbnail="true" roundedCircle="true"/>
+    <Image className='Resume-image' src={profile} thumbnail="true" roundedCircle="true" alt='my profile image'/>
 
     <div className='Resume-icon'>
-    <Link to='https://github.com/LeaBani'><Image className='Resume-icon-item' src={github} roundedCircle="true"/></Link> 
-    <Link to='https://www.linkedin.com/in/lea-bani/'><Image className='Resume-icon-item' src={linkedin} roundedCircle="true"/></Link>
-    <Link to='https://twitter.com/leabani7'><Image className='Resume-icon-item' src={twitter} roundedCircle="true"/></Link>
-    <Link to='https://www.instagram.com/lea_laila91940/'><Image className='Resume-icon-item' src={insta} roundedCircle="true"/></Link>
+    <Link to='https://github.com/LeaBani'><Image className='Resume-icon-item' src={github} roundedCircle="true" alt='github-logo'/></Link> 
+    <Link to='https://www.linkedin.com/in/lea-bani/'><Image className='Resume-icon-item' src={linkedin} roundedCircle="true" alt='linkedin-logo'/></Link>
+    <Link to='https://twitter.com/leabani7'><Image className='Resume-icon-item' src={twitter} roundedCircle="true" alt='twitter-logo'/></Link>
+    <Link to='https://www.instagram.com/lea_laila91940/'><Image className='Resume-icon-item' src={insta} roundedCircle="true" alt='insta-logo'/></Link>
     </div>
 
     <div className='Resume-list'>

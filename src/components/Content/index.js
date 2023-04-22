@@ -12,15 +12,17 @@ import { useInView } from 'react-intersection-observer';
 import AnimatedText from './AnimatedText';
 import { Link } from 'react-router-dom';
 
-import js from '../../assets/image/js.png';
-import node from '../../assets/image/node.png';
-import html from '../../assets/image/html.png';
-import react from '../../assets/image/react.png';
-import sass from '../../assets/image/sass.png';
-import psql from '../../assets/image/psql.png';
-import bootstrap from '../../assets/image/bootstrap.png';
-import git from '../../assets/image/git.png';
-import css from '../../assets/image/css.png';
+import js from '../../assets/image/stack/js.png';
+import ts from '../../assets/image/stack/ts.png';
+
+import node from '../../assets/image/stack/node.png';
+import html from '../../assets/image/stack/html.png';
+import react from '../../assets/image/stack/react.png';
+import sass from '../../assets/image/stack/sass.png';
+import psql from '../../assets/image/stack/psql.png';
+import bootstrap from '../../assets/image/stack/bootstrap.png';
+import git from '../../assets/image/stack/git.png';
+import css from '../../assets/image/stack/css.png';
 
 import ob from '../../assets/image/work/ob.png';
 import lidl from '../../assets/image/work/lidl.png';
@@ -56,15 +58,16 @@ function Content({isDark}) {
         <AnimatedText isDark={isDark} text="&#60; Hello World /&#62;"/>
 
         <div className='Content-icon'>
-        <Image className='Content-icon-item' src={html}/>
-        <Image className='Content-icon-item' src={css}/>
-        <Image className='Content-icon-item' src={js}/>
-        <Image className='Content-icon-item' src={react}/>
-        <Image className='Content-icon-item' src={bootstrap}/>
-        <Image className='Content-icon-item' src={sass}/>
-        <Image className='Content-icon-item' src={node}/>
-        <Image className='Content-icon-item' src={psql}/>
-        <Image className='Content-icon-item' src={git}/>
+        <Image className='Content-icon-item' src={html} alt='html'/>
+        <Image className='Content-icon-item' src={css} alt='css'/>
+        <Image className='Content-icon-item' src={js} alt='javascript'/>
+        <Image className='Content-icon-item' src={ts} alt='typescript'/>
+        <Image className='Content-icon-item' src={react} alt='react'/>
+        <Image className='Content-icon-item' src={bootstrap} alt='bootstrap'/>
+        <Image className='Content-icon-item' src={sass} alt='sass'/>
+        <Image className='Content-icon-item' src={node} alt='node'/>
+        <Image className='Content-icon-item' src={psql} alt='psql'/>
+        <Image className='Content-icon-item' src={git} alt='git'/>
         </div>
         <h2 className="Content-description">Here I am, Lea, Web Developper. Have a look on my Projects, and my Resume. 
         I would be happy to get in touch with you to share my experience</h2>
@@ -102,7 +105,7 @@ function Content({isDark}) {
                 <li>Supplier care and close communication with purchasing department </li>
                 <li>Team Management</li>
                 <li>Project Management & analytics</li>
-                <Image className='Content-experience-card-item' src={lidl}/>
+                <Image className='Content-experience-card-item' src={lidl} alt='lidl-logo'/>
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
             </Card.Body>
@@ -116,7 +119,7 @@ function Content({isDark}) {
                 <li>Daily supplier orders, trend calculation, sales forecast, Stores openings support, inventory control</li>
                 <li>External Storage Organisation"</li>
                 <li>Maintenance of stocks in an external warehouse for sensitive products: fruits, vegetables and flowers (90 stores)</li>
-                <Image className='Content-experience-card-item' src={lidl}/>
+                <Image className='Content-experience-card-item' src={lidl} alt='lidl-logo'/>
 
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
@@ -132,7 +135,7 @@ function Content({isDark}) {
                 <li>Processes Translations French to German/German to French</li>
                 <li>Organization of seminars</li>
                 <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
-                <Image className='Content-experience-card-item' src={lidl}/>
+                <Image className='Content-experience-card-item' src={lidl} alt='lidl-logo'/>
 
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
@@ -146,7 +149,7 @@ function Content({isDark}) {
                 <Card.Text>
                 <li>Cashier and customer care</li>
                 <li>Kitchen, organization, respect of the processes</li>
-                <Image className='Content-experience-card-item' src={mcdo}/>
+                <Image className='Content-experience-card-item' src={mcdo} alt='mcdo-logo'/>
 
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
@@ -173,7 +176,7 @@ function Content({isDark}) {
                 <Card.Text>
                 <li>Sending orders with SAP</li>
                 <li>Contact with the commercials, schedule events and meeting</li>
-                <Image className='Content-experience-card-item' src={ob}/>
+                <Image className='Content-experience-card-item' src={ob} alt='otto bock -logo'/>
 
                 </Card.Text>
                 <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
