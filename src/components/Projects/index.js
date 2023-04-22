@@ -6,9 +6,10 @@ import Badge from 'react-bootstrap/Badge';
 
 import { Link } from 'react-router-dom';
 
-import fitwork from '../../assets/image/fitwork.png';
-import searchprofile from '../../assets/image/searchprofile.png';
+import fitwork from '../../assets/image/projects/fitwork.png';
+import searchprofile from '../../assets/image/projects/searchprofile.png';
 import hangman from '../../assets/image/projects/hangman.png';
+import converter from '../../assets/image/projects/converter.png';
 
 import { FaHeart } from 'react-icons/fa';
 
@@ -82,7 +83,7 @@ function Projects() {
         </Card>
 
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-            <Card.Img variant="top" />
+            <Card.Img variant="top" src={converter} style={{ marginTop: '.5rem', width: "70%", height :"auto", alignSelf: "center"}}/>
             <Card.Body>
             <Card.Title as={Link} to="/" className='Projects-card-title'># 3 Converter</Card.Title>
             <Card.Text className='Projects-card-text'>
