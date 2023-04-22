@@ -11,7 +11,7 @@ import Projects from './Projects';
 import Error from './Error';
 import Footer from './Footer';
 
-import { FaToggleOff, FaToggleOn } from "react-icons/fa";
+import { FaToggleOff, FaToggleOn, FaSun, FaMoon } from "react-icons/fa";
 
 function App() {
 
@@ -26,7 +26,9 @@ function App() {
     <div className={isDark ? "App-dark" : "App-light"} >
       <NavBar isDark={isDark} />
       <ScrollToTop/>
-      <div onClick={toggleIsDark}>{isDark ? <FaToggleOn className="App-icon"/> : <FaToggleOff className="App-icon"/>}</div>
+      <div onClick={toggleIsDark}>{isDark 
+      ? <div className="App-icon-group"><FaToggleOn className="App-icon-one"/><FaSun className="App-icon"/></div> 
+      : <div className="App-icon-group"><FaToggleOff className="App-icon-one"/><FaMoon className="App-icon"/></div>}</div>
       <Routes>
         <Route path="/" element={<Content isDark={isDark} />} />
         <Route path="/my-resume" element={<Resume />} />
