@@ -12,15 +12,17 @@ import { useInView } from 'react-intersection-observer';
 import AnimatedText from './AnimatedText';
 import { Link } from 'react-router-dom';
 
-import js from '../../assets/image/js.png';
-import node from '../../assets/image/node.png';
-import html from '../../assets/image/html.png';
-import react from '../../assets/image/react.png';
-import sass from '../../assets/image/sass.png';
-import psql from '../../assets/image/psql.png';
-import bootstrap from '../../assets/image/bootstrap.png';
-import git from '../../assets/image/git.png';
-import css from '../../assets/image/css.png';
+import js from '../../assets/image/stack/js.png';
+import ts from '../../assets/image/stack/ts.png';
+
+import node from '../../assets/image/stack/node.png';
+import html from '../../assets/image/stack/html.png';
+import react from '../../assets/image/stack/react.png';
+import sass from '../../assets/image/stack/sass.png';
+import psql from '../../assets/image/stack/psql.png';
+import bootstrap from '../../assets/image/stack/bootstrap.png';
+import git from '../../assets/image/stack/git.png';
+import css from '../../assets/image/stack/css.png';
 
 import ob from '../../assets/image/work/ob.png';
 import lidl from '../../assets/image/work/lidl.png';
@@ -59,6 +61,7 @@ function Content({isDark}) {
         <Image className='Content-icon-item' src={html}/>
         <Image className='Content-icon-item' src={css}/>
         <Image className='Content-icon-item' src={js}/>
+        <Image className='Content-icon-item' src={ts}/>
         <Image className='Content-icon-item' src={react}/>
         <Image className='Content-icon-item' src={bootstrap}/>
         <Image className='Content-icon-item' src={sass}/>

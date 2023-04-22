@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 
 import fitwork from '../../assets/image/fitwork.png';
 import searchprofile from '../../assets/image/searchprofile.png';
+import hangman from '../../assets/image/projects/hangman.png';
+
 import { FaHeart } from 'react-icons/fa';
 
 function Projects() {
@@ -47,6 +49,9 @@ function Projects() {
                     </Badge>
                     <Badge className="Projects-card-label-one" bg="secondary">
                         Express
+                    </Badge>
+                    <Badge className="Projects-card-label-one" bg="danger">
+                        eslint
                     </Badge>
                 </span>
             </Card.Text>
@@ -123,6 +128,29 @@ function Projects() {
                 </span>
             </Card.Text>
             <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/LeaBani/my-portefolio">Go to repository</Button>
+            </Card.Body>
+        </Card>
+
+        <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
+            <Card.Img variant="top" src={hangman} style={{ marginTop: '.5rem', width: "55%", height :"auto", alignSelf: "center"}}/>
+            <Card.Body>
+            <Card.Title as={Link} to="/" className='Projects-card-title'># 5 Hangman</Card.Title>
+            <Card.Text className='Projects-card-text'>
+                This project has been done to discover TypeScript with ReactJS.
+                It's the famous game "the hangman".
+                <span className='Projects-card-label'>
+                    <Badge className="Projects-card-label-one"  bg="primary">
+                        ReactJS
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="accent">
+                        TypeScript
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="primary">
+                        Vite
+                    </Badge>
+                </span>
+            </Card.Text>
+            <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/LeaBani/hangman-ts">Go to repository</Button>
             </Card.Body>
         </Card>
 
