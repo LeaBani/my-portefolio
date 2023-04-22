@@ -21,7 +21,7 @@ function Projects() {
 
     <div className='Projects-list'>
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-            <Card.Img variant="top" src={fitwork} />
+            <Card.Img variant="top" src={fitwork} alt='project-image' />
             <Card.Body>
             <Card.Title as={Link} to="https://fitwork-app.netlify.app/" className='Projects-card-title'># 1 Fit Work</Card.Title>
             <Card.Text className='Projects-card-text'>
@@ -61,7 +61,7 @@ function Projects() {
         </Card>
 
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-            <Card.Img variant="top" src={searchprofile} />
+            <Card.Img variant="top" src={searchprofile} alt='project-image'/>
             <Card.Body>
             <Card.Title as={Link} to="https://trouve-ton-profil-github.netlify.app/" className='Projects-card-title'># 2 GitHub Research</Card.Title>
             <Card.Text className='Projects-card-text'>
@@ -83,7 +83,7 @@ function Projects() {
         </Card>
 
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-            <Card.Img variant="top" src={converter} style={{ marginTop: '.5rem', width: "70%", height :"auto", alignSelf: "center"}}/>
+            <Card.Img variant="top" src={converter} style={{ marginTop: '.5rem', width: "70%", height :"auto", alignSelf: "center"}} alt='project-image'/>
             <Card.Body>
             <Card.Title as={Link} to="/" className='Projects-card-title'># 3 Converter</Card.Title>
             <Card.Text className='Projects-card-text'>
@@ -105,7 +105,7 @@ function Projects() {
         </Card>
 
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-            <Card.Img variant="top" />
+            <Card.Img variant="top" alt='project-image' />
             <Card.Body>
             <Card.Title as={Link} to="/" className='Projects-card-title'># 4 My portefolio</Card.Title>
             <Card.Text className='Projects-card-text'>
@@ -133,9 +133,9 @@ function Projects() {
         </Card>
 
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-            <Card.Img variant="top" src={hangman} style={{ marginTop: '.5rem', width: "55%", height :"auto", alignSelf: "center"}}/>
+            <Card.Img variant="top" src={hangman} style={{ marginTop: '.5rem', width: "55%", height :"auto", alignSelf: "center"}} alt='project-image'/>
             <Card.Body>
-            <Card.Title as={Link} to="/" className='Projects-card-title'># 5 Hangman</Card.Title>
+            <Card.Title as={Link} to="/" className='Projects-card-title'># 5 Hangman</Card.Title> 
             <Card.Text className='Projects-card-text'>
                 This project has been done to discover TypeScript with ReactJS.
                 It's the famous game "the hangman".
