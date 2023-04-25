@@ -23,6 +23,7 @@ import psql from '../../assets/image/stack/psql.png';
 import bootstrap from '../../assets/image/stack/bootstrap.png';
 import git from '../../assets/image/stack/git.png';
 import css from '../../assets/image/stack/css.png';
+import angular from '../../assets/image/stack/angular.png';
 
 import ob from '../../assets/image/work/ob.png';
 import lidl from '../../assets/image/work/lidl.png';
@@ -63,6 +64,7 @@ function Content({isDark}) {
         <Image className='Content-icon-item' src={js} alt='javascript'/>
         <Image className='Content-icon-item' src={ts} alt='typescript'/>
         <Image className='Content-icon-item' src={react} alt='react'/>
+        <Image className='Content-icon-item' src={angular} alt='angular'/>
         <Image className='Content-icon-item' src={bootstrap} alt='bootstrap'/>
         <Image className='Content-icon-item' src={sass} alt='sass'/>
         <Image className='Content-icon-item' src={node} alt='node'/>
