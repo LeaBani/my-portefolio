@@ -27,8 +27,8 @@ function App() {
       <NavBar isDark={isDark} />
       <ScrollToTop/>
       <div onClick={toggleIsDark}>{isDark 
-      ? <div className="App-icon-group"><FaToggleOn className="App-icon-one"/><FaSun className="App-icon"/></div> 
-      : <div className="App-icon-group"><FaToggleOff className="App-icon-one"/><FaMoon className="App-icon"/></div>}</div>
+      ? <div className="App-icon-group"><FaToggleOn /><FaSun /></div> 
+      : <div className="App-icon-group"><FaToggleOff /><FaMoon /></div>}</div>
       <Routes>
         <Route path="/" element={<Content isDark={isDark} />} />
         <Route path="/my-resume" element={<Resume />} />

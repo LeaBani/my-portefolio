@@ -10,6 +10,7 @@ import fitwork from '../../assets/image/projects/fitwork.png';
 import searchprofile from '../../assets/image/projects/searchprofile.png';
 import hangman from '../../assets/image/projects/hangman.png';
 import converter from '../../assets/image/projects/converter.png';
+import portefolio from '../../assets/image/projects/portefolio.png';
 
 import { FaHeart } from 'react-icons/fa';
 
@@ -105,7 +106,7 @@ function Projects() {
         </Card>
 
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-            <Card.Img variant="top" alt='project-image' />
+            <Card.Img variant="top" src={portefolio} style={{ marginTop: '.5rem', width: "88%", height :"auto", alignSelf: "center"}} alt='project-image'/>
             <Card.Body>
             <Card.Title as={Link} to="/" className='Projects-card-title'># 4 My portefolio</Card.Title>
             <Card.Text className='Projects-card-text'>
@@ -135,7 +136,7 @@ function Projects() {
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
             <Card.Img variant="top" src={hangman} style={{ marginTop: '.5rem', width: "55%", height :"auto", alignSelf: "center"}} alt='project-image'/>
             <Card.Body>
-            <Card.Title as={Link} to="/" className='Projects-card-title'># 5 Hangman</Card.Title> 
+            <Card.Title className='Projects-card-title'># 5 Hangman</Card.Title> 
             <Card.Text className='Projects-card-text'>
                 This project has been done to discover TypeScript with ReactJS.
                 It's the famous game "the hangman".
@@ -152,6 +153,31 @@ function Projects() {
                 </span>
             </Card.Text>
             <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/LeaBani/hangman-ts">Go to repository</Button>
+            </Card.Body>
+        </Card>
+
+        <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
+            <Card.Img />
+            <Card.Body>
+            <Card.Title className='Projects-card-title'># 6 Weather App</Card.Title> 
+            <Card.Text className='Projects-card-text'>
+                With this app, I've discovered a new Framework: Angular. I've been using TypeScript and an external API to collect the weather information. 
+                <span className='Projects-card-label'>
+                    <Badge className="Projects-card-label-one"  bg="primary">
+                        Angular
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="accent">
+                        TypeScript
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="dark">
+                        CSS
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="info">
+                        POO
+                    </Badge>
+                </span>
+            </Card.Text>
+            <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/LeaBani/weather-app">Go to repository</Button>
             </Card.Body>
         </Card>
 
