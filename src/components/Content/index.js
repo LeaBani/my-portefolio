@@ -72,7 +72,7 @@ function Content({isDark}) {
         <Image className='Content-icon-item' src={git} alt='git'/>
         </div>
         <h2 className="Content-description">Here I am, Lea, Web Developper. Have a look on my Projects, and my Resume. 
-        I would be happy to get in touch with you to share my experience</h2>
+        I would be happy to get in touch with you to share my experience !</h2>
 
         <h3 className="Content-question">How did I get to Web Developpement ?</h3>
 
@@ -85,7 +85,7 @@ function Content({isDark}) {
         <Card className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
             <Card.Body>
                 <Card.Title>February - March 2023</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">ReactJS Developper | @Homeoffice</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">ReactJS Developper | Full remote</Card.Subtitle>
                 <Card.Text>
                 <li>"Fit Work": Application concerning best practise at work </li>
                 <li>Build this application from scratch with Agile method.</li>

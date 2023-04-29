@@ -46,9 +46,9 @@ function Resume() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>My experience as Web Developper</Accordion.Header>
         <Accordion.Body>
-        I started an apprenticeship on September 26th, 2022 so that I learnt the basics of web  development. During 5 months, we used different tools and programming languages to learn development: VSCode, Git, HTML, CSS, JavaScript, NodeJS, PostgreSQL and ReactJS.
-        At the end of this full-time training, we have one month to build with our team an App/Web site (Minimum Viable Product) in Agile method with ReactJS in February. The training ends on March 2023.
-        We also covered the basics in SQL and NoSQL (as MongoDB). I am learning fast, and I love being confronted to new challenges! 
+        I started an apprenticeship on September 26th, 2022 so that I learnt the basics of web  development. During 5 months, we used different tools and programming languages to learn development: VSCode, Git, HTML, CSS, JavaScript, NodeJS/Express, PostgreSQL and ReactJS.
+        At the end of this full-time training, we build during one month with our team an App (Minimum Viable Product) in Agile method with ReactJS. The training ends on March 2023.
+        We also covered the basics in SQL and NoSQL (as MongoDB). I am learning fast, and I love being confronted to new challenges! I am currently working on sides projects with differents kind of technologies. Visit my Git Hub profile! 
         I started my professional retraining to give a new impetus to my career.
         </Accordion.Body>
       </Accordion.Item>

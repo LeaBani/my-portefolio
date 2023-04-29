@@ -11,6 +11,7 @@ import searchprofile from '../../assets/image/projects/searchprofile.png';
 import hangman from '../../assets/image/projects/hangman.png';
 import converter from '../../assets/image/projects/converter.png';
 import portefolio from '../../assets/image/projects/portefolio.png';
+import weatherapp from '../../assets/image/projects/weatherapp.png';
 
 import { FaHeart } from 'react-icons/fa';
 
@@ -157,7 +158,7 @@ function Projects() {
         </Card>
 
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-            <Card.Img />
+        <Card.Img variant="top" src={weatherapp} style={{ marginTop: '.5rem', width: "55%", height :"auto", alignSelf: "center"}} alt='project-image'/>
             <Card.Body>
             <Card.Title className='Projects-card-title'># 6 Weather App</Card.Title> 
             <Card.Text className='Projects-card-text'>
