@@ -1,11 +1,11 @@
-# My portefolio
+# My portfolio
 
 This project is my first solo project after my apprenticeship.
 You can find on this website my entire Resume, in french or in english.
 
 ## Production
 
-[Link to the website](https://leabani-portefolio.netlify.app/)
+[Link to the website](https://leabani-portfolio.netlify.app/)
 
 ## Stack
 
@@ -14,7 +14,7 @@ I've enjoyed coding a DarkMode for example and the JavaScripts animations with F
 
 ## New features
 
-This portefolio has been done in english.
+This portfolio has been done in english.
 A french version is coming soon.
 Some performance optimization should be done, and some work about the deploy also.
 
