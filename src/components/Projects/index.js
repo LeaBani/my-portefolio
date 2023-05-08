@@ -109,9 +109,9 @@ function Projects() {
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
             <Card.Img variant="top" src={portefolio} style={{ marginTop: '.5rem', width: "88%", height :"auto", alignSelf: "center"}} alt='project-image'/>
             <Card.Body>
-            <Card.Title as={Link} to="/" className='Projects-card-title'># 4 My portefolio</Card.Title>
+            <Card.Title as={Link} to="/" className='Projects-card-title'># 4 My portfolio</Card.Title>
             <Card.Text className='Projects-card-text'>
-                Yes, this Web App that you are currently visiting is my homemade portefolio made with love. 
+                Yes, this Web App that you are currently visiting is my homemade portfolio. 
                 <span className='Projects-card-label'>
                     <Badge className="Projects-card-label-one"  bg="primary">
                         ReactJS

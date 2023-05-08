@@ -9,7 +9,7 @@ function NavBar({isDark}) {
   return (
     <Navbar expand="lg" bg={isDark ? "primary" : "secondary"} variant={isDark ? "dark" : "light"} sticky="top" collapseOnSelect>
       <Container>
-        <Navbar.Brand as={NavLink} to="/">Lea's portefolio</Navbar.Brand>
+        <Navbar.Brand as={NavLink} to="/">Lea's portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" onSelect={(eventKey) => console.log(eventKey)}>
