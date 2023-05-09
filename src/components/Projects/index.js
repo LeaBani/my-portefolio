@@ -12,6 +12,7 @@ import hangman from '../../assets/image/projects/hangman.png';
 import converter from '../../assets/image/projects/converter.png';
 import portefolio from '../../assets/image/projects/portefolio.png';
 import weatherapp from '../../assets/image/projects/weatherapp.png';
+import store from '../../assets/image/projects/store.png';
 
 import { FaHeart } from 'react-icons/fa';
 
@@ -179,6 +180,43 @@ function Projects() {
                 </span>
             </Card.Text>
             <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/LeaBani/weather-app">Go to repository</Button>
+            </Card.Body>
+        </Card>
+
+        <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
+        <Card.Img variant="top" src={store} style={{ marginTop: '.5rem', width: "75%", height :"auto", alignSelf: "center"}} alt='project-image'/>
+            <Card.Body>
+            <Card.Title className='Projects-card-title'># 7 Online Store</Card.Title> 
+            <Card.Text className='Projects-card-text'>
+                In order to learn to use a secure payment tool, I've used the Stripe API in this project. I've build a fake online store with an external API. 
+                <span className='Projects-card-label'>
+                    <Badge className="Projects-card-label-one"  bg="primary">
+                        Angular
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="accent">
+                        TypeScript
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="dark">
+                        Tailwind
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="info">
+                        POO
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="danger">
+                        Stripe
+                    </Badge>
+                    <Badge className="Projects-card-label-one" bg="secondary">
+                        NodeJS
+                    </Badge>
+                    <Badge className="Projects-card-label-one" bg="secondary">
+                        Express
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="secondary">
+                        API
+                    </Badge>
+                </span>
+            </Card.Text>
+            <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/LeaBani/store-angular">Go to repository</Button>
             </Card.Body>
         </Card>
 
