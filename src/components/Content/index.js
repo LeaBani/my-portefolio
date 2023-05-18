@@ -61,16 +61,19 @@ function Content({isDark}) {
         <div className='Content-icon'>
         <Image className='Content-icon-item' src={html} alt='html'/>
         <Image className='Content-icon-item' src={css} alt='css'/>
-        <Image className='Content-icon-item' src={js} alt='javascript'/>
-        <Image className='Content-icon-item' src={ts} alt='typescript'/>
         <Image className='Content-icon-item' src={react} alt='react'/>
         <Image className='Content-icon-item' src={angular} alt='angular'/>
         <Image className='Content-icon-item' src={bootstrap} alt='bootstrap'/>
         <Image className='Content-icon-item' src={sass} alt='sass'/>
+
+        <Image className='Content-icon-item' src={js} alt='javascript'/>
+        <Image className='Content-icon-item' src={ts} alt='typescript'/>
         <Image className='Content-icon-item' src={node} alt='node'/>
         <Image className='Content-icon-item' src={psql} alt='psql'/>
+
         <Image className='Content-icon-item' src={git} alt='git'/>
         </div>
+
         <h2 className="Content-description">Here I am, Lea, Web Developper. Have a look on my Projects, and my Resume. 
         I would be happy to get in touch with you to share my experience !</h2>
 

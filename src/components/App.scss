@@ -5,10 +5,12 @@
   &-light{
     font-family:  v.$font-sans;
     background-color: v.$light;
+    transition-duration: 3s;
   }
   &-dark{
     font-family:  v.$font-sans;
     background-color: v.$primary;
+    transition-duration: 3s;
   }
 
   &-icon-group{

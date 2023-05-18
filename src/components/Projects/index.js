@@ -54,6 +54,9 @@ function Projects() {
                     <Badge className="Projects-card-label-one" bg="secondary">
                         Express
                     </Badge>
+                    <Badge className="Projects-card-label-one" bg="secondary">
+                        Heroku
+                    </Badge>
                     <Badge className="Projects-card-label-one" bg="danger">
                         eslint
                     </Badge>
@@ -217,6 +220,31 @@ function Projects() {
                 </span>
             </Card.Text>
             <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/LeaBani/store-angular">Go to repository</Button>
+            </Card.Body>
+        </Card>
+
+        <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
+        <Card.Img variant="top"/>
+            <Card.Body>
+            <Card.Title className='Projects-card-title'># 8 Statistics</Card.Title> 
+            <Card.Text className='Projects-card-text'>
+                Here I am working on a Dashboard with the Youtube API and the RechartsJS library. Each visitor can visualize the Most Popular Videos of his zone.
+                <span className='Projects-card-label'>
+                    <Badge className="Projects-card-label-one"  bg="primary">
+                        React
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="accent">
+                        RechartsJS
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="dark">
+                        Tailwind
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="secondary">
+                        Youtube API
+                    </Badge>
+                </span>
+            </Card.Text>
+            <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/LeaBani/statistics-with-recharts">Go to repository</Button>
             </Card.Body>
         </Card>
 

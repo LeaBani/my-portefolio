@@ -49,11 +49,16 @@
         display: inline-flex;
         flex-wrap: wrap;
         margin: 1rem 2rem 5rem 2rem;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         &-item{
             height: 5rem;
             margin: .5rem;
+        }
+        &-item:hover{
+            height: 5rem;
+            margin: .5rem;
+            opacity: 50%;
         }
     }
     &-experience{
