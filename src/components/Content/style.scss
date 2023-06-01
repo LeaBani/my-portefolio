@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
     
     &-title{
         margin: 14rem 1rem 6rem 1rem;
@@ -46,49 +46,36 @@
 
     }
     &-icon{
-        display: inline-flex;
+        display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         margin: 1rem 2rem 5rem 2rem;
         justify-content: space-between;
-
-        &-item{
-            height: 5rem;
-            margin: .5rem;
-        }
-        &-item:hover{
-            height: 5rem;
-            margin: .5rem;
-            opacity: 50%;
-        }
-    }
-    &-experience{
-        margin: 2rem;
         
-        &-list{
-            margin-bottom: 4rem;
-            display: flex;
+        &-section{
+            display: inline-flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            text-align: justify;
+            justify-content: space-between;
+            margin-bottom: 3rem;
         }
-    
-        &-card{
-            margin: 1rem;
-            box-shadow: 5px 5px 4px v.$secondary;
-            
-            &-item{
-                position: absolute;
-                bottom: 1.3rem;
-                right: 1.7rem;
-                max-width: 7rem;
-                max-height: 4rem;
+
+        &-subtitle{
+            color: v.$secondary;
+        }
+        &-item{
+            margin: .5rem;
+            &-image{
+                width: auto;
+                height: 6rem;
             }
         }
-
-        &-card:hover{
-            background-color: v.$light;
-            box-shadow: 4px 4px v.$warning;
-            transition-duration: 800ms;
+        &-item:hover{
+            margin: .5rem;
+            opacity: 50%;
+            &-image{
+                width: auto;
+                height: 6rem;
+            }
         }
     }
     &-progress{

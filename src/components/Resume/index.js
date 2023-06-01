@@ -17,6 +17,7 @@ import fileDownload from 'js-file-download';
 import axios from 'axios';
 
 import { Link } from 'react-router-dom';
+import Experience from './Experience';
 
 function Resume() {
 
@@ -72,6 +73,8 @@ function Resume() {
     </Accordion>
 
     </div>
+
+    <Experience />
     
     <div className='Resume-end'>
     If you have any questions, please feel free to get in touch,
