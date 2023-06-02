@@ -14,59 +14,75 @@ import css from './../assets/image/stack/css.png';
 import angular from './../assets/image/stack/angular.png';
 
 
-const data = 
+const dataFrontend = 
     [
         {
             "id": 1,
             "title": "javaScript",
-            "image": javascript
+            "image": javascript,
+            "type": "frontend"
         },
         {
             "id": 2,
             "title": "HTML",
-            "image": html
+            "image": html,
+            "type": "frontend"
+
+
         },
         {
             "id": 3,
             "title": "CSS",
-            "image": css
+            "image": css,
+            "type": "frontend"
         },
         {
             "id": 4,
             "title": "TypeScript",
-            "image": ts
+            "image": ts,
+            "type": "frontend"
         },
         {
             "id": 5,
             "title": "ReactJS",
-            "image": react
-        },
-        {
-            "id": 6,
-            "title": "NodeJS",
-            "image": node
+            "image": react,
+            "type": "frontend"
         },
         {
             "id": 7,
             "title": "Bootstrap",
-            "image": bootstrap
+            "image": bootstrap,
+            "type": "frontend"
         },
         {
             "id": 8,
             "title": "Angular",
-            "image": angular
+            "image": angular,
+            "type": "frontend"
         },
         {
-            "id": 9,
-            "title": "Git",
-            "image": git
+            "id": 6,
+            "title": "NodeJS",
+            "image": node,
+            "type": "backend"
         },
         {
             "id": 10,
             "title": "PostgreSQL",
-            "image": psql
+            "image": psql,
+            "type": "backend"
         },
-    ]
+        {
+            "id": 9,
+            "title": "Git",
+            "image": git,
+            "type": "devops"
+        }
+        
+    ];
+    
+        export default dataFrontend;
 
 
-export default data;
+
+

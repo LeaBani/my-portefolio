@@ -51,12 +51,13 @@
         flex-direction: column;
         margin: 1rem 2rem 5rem 2rem;
         justify-content: space-between;
-        
+       
         &-section{
             display: inline-flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin-bottom: 3rem;
+            text-align: center;
         }
 
         &-subtitle{
@@ -64,17 +65,27 @@
         }
         &-item{
             margin: .5rem;
+            &-body{
+                background-color: none;
+            }
+            &-title{
+                font-size: 12px;
+            }
             &-image{
                 width: auto;
-                height: 6rem;
+                height: 4rem;
             }
         }
         &-item:hover{
             margin: .5rem;
-            opacity: 50%;
+            opacity: 30%;
+            transition-duration: 0.4s;
+            &-title{
+                font-size: 12px;
+            }
             &-image{
                 width: auto;
-                height: 6rem;
+                height: 4rem;
             }
         }
     }

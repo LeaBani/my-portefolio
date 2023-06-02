@@ -4,11 +4,13 @@ import AnimatedText from './AnimatedText';
 
 import { Link } from 'react-router-dom';
 
-import Card from 'react-bootstrap/Card';
-
-import data from '../../data/data'
+import dataFrontend from '../../data/data'
 
 function Content({isDark}) {
+
+  const frontendData = dataFrontend.filter(elem => elem.type === "frontend");
+  const backendData = dataFrontend.filter(elem => elem.type === "backend");
+  const devopsData = dataFrontend.filter(elem => elem.type === "devops");
    
   return (
     <div className="Content">
@@ -24,28 +26,51 @@ function Content({isDark}) {
 
         <h4 className="Content-question"># My skills</h4>
 
-
-
         <div className='Content-icon'>
+
         <h5 className="Content-icon-subtitle"># Frontend</h5>
-
-
-        {data.map((elem) => 
+        <div className='Content-icon-part'>
+        {frontendData.map((elem) => 
         <div className='Content-icon-section' key={elem.id}>
-        <Card className='Content-icon-item'>
-          <Card.Body>
-            <Card.Title>{elem.title}</Card.Title>
-          </Card.Body>
-          <Card.Img key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
-        </Card>
+        <div className='Content-icon-item'>
+          <div className='Content-icon-item-body'>
+            <div className='Content-icon-item-title'>{elem.title}</div>
+          </div>
+          <img alt="stack" key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
+        </div>
         </div>
         )}
+        </div>
 
         <h5 className="Content-icon-subtitle"># Backend</h5>
 
+        <div className='Content-icon-part'>
+        {backendData.map((elem) => 
+        <div className='Content-icon-section' key={elem.id}>
+        <div className='Content-icon-item'>
+          <div className='Content-icon-item-body'>
+            <div className='Content-icon-item-title'>{elem.title}</div>
+          </div>
+          <img alt="stack" key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
+        </div>
+        </div>
+        )}
+        </div>
 
         <h5 className="Content-icon-subtitle"># Devops</h5>
 
+        <div className='Content-icon-part'>
+        {devopsData.map((elem) => 
+        <div className='Content-icon-section' key={elem.id}>
+        <div className='Content-icon-item'>
+          <div className='Content-icon-item-body'>
+            <div className='Content-icon-item-title'>{elem.title}</div>
+          </div>
+          <img alt="stack" key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
+        </div>
+        </div>
+        )}
+        </div>
 
         </div>
 

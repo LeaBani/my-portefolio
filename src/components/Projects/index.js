@@ -13,6 +13,7 @@ import converter from '../../assets/image/projects/converter.png';
 import portefolio from '../../assets/image/projects/portefolio.png';
 import weatherapp from '../../assets/image/projects/weatherapp.png';
 import store from '../../assets/image/projects/store.png';
+import maplante from '../../assets/image/projects/plants.png';
 
 import { FaHeart } from 'react-icons/fa';
 
@@ -162,7 +163,7 @@ function Projects() {
         </Card>
 
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-        <Card.Img variant="top" src={weatherapp} style={{ marginTop: '.5rem', width: "55%", height :"auto", alignSelf: "center"}} alt='project-image'/>
+        <Card.Img variant="top" src={weatherapp} style={{ marginTop: '.5rem', width: "75%", height :"auto", alignSelf: "center"}}  alt='project-image'/>
             <Card.Body>
             <Card.Title className='Projects-card-title'># 6 Weather App</Card.Title> 
             <Card.Text className='Projects-card-text'>
@@ -224,11 +225,11 @@ function Projects() {
         </Card>
 
         <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
-        <Card.Img variant="top"/>
+        <Card.Img variant="top" />
             <Card.Body>
             <Card.Title className='Projects-card-title'># 8 Statistics</Card.Title> 
             <Card.Text className='Projects-card-text'>
-                Here I am working on a Dashboard with the Youtube API and the RechartsJS library. Each visitor can visualize the Most Popular Videos of his zone.
+                Here I am working on a Dashboard with the Youtube API and the RechartsJS library. Each visitor can visualize the Most Popular Videos of his region.
                 <span className='Projects-card-label'>
                     <Badge className="Projects-card-label-one"  bg="primary">
                         React
@@ -245,6 +246,40 @@ function Projects() {
                 </span>
             </Card.Text>
             <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/LeaBani/statistics-with-recharts">Go to repository</Button>
+            </Card.Body>
+        </Card>
+
+        <Card className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
+        <Card.Img variant="top" src={maplante} style={{ marginTop: '.5rem', width: "75%", height :"auto", alignSelf: "center"}} alt='project-image'/>
+            <Card.Body>
+            <Card.Title className='Projects-card-title'># 9 Maplante</Card.Title> 
+            <Card.Text className='Projects-card-text'>
+                This project is a collaborative work. I am part of the project. This fullstack App should be an exchange platform for Plants lovers. 
+                <span className='Projects-card-label'>
+                    <Badge className="Projects-card-label-one"  bg="primary">
+                        NextJS
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="accent">
+                        NextAuth
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="accent">
+                        TypeScript
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="dark">
+                        Tailwind
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="secondary">
+                        Trefle API
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="secondary">
+                        Prisma
+                    </Badge>
+                    <Badge className="Projects-card-label-one"  bg="secondary">
+                        PostgreSQL
+                    </Badge>
+                </span>
+            </Card.Text>
+            <Button variant="primary" className="Projects-card-button" as={Link} to="https://github.com/florine89/Plant-front">Go to repository</Button>
             </Card.Body>
         </Card>
 
