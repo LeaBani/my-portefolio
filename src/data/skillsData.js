@@ -6,7 +6,7 @@ import ts from './../assets/image/stack/ts.png';
 
 import node from './../assets/image/stack/node.png';
 import react from './../assets/image/stack/react.png';
-// import sass from '../../assets/image/stack/sass.png';
+import tailwind from './../assets/image/stack/tailwind.png';
 import psql from './../assets/image/stack/psql.png';
 import bootstrap from './../assets/image/stack/bootstrap.png';
 import git from './../assets/image/stack/git.png';
@@ -19,6 +19,7 @@ import prisma from './../assets/image/stack/prisma.svg';
 import nextjs from './../assets/image/stack/nextjs.png';
 import heroku from './../assets/image/stack/heroku.png';
 import jest from './../assets/image/stack/jest.png';
+import vba from './../assets/image/stack/excel.png';
 
 import github from './../assets/image/github.png';
 
@@ -133,6 +134,18 @@ const data =
             "id": 18,
             "title": "JEST",
             "image": jest,
+            "type": "frontend"
+        },
+        {
+            "id": 19,
+            "title": "VBA",
+            "image": vba,
+            "type": "microsoft"
+        },
+        {
+            "id": 20,
+            "title": "Tailwind",
+            "image": tailwind,
             "type": "frontend"
         }
         

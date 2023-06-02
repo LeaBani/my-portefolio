@@ -46,10 +46,10 @@
         }
         }
     &-question{
+        text-decoration: none;
         margin: 8rem 2rem 8rem 2rem;
         text-align: justify;
         color: v.$secondary;
-
     }
     &-icon{
         display: flex;
@@ -57,6 +57,7 @@
         flex-direction: column;
         margin: 1rem 2rem 5rem 2rem;
         justify-content: space-between;
+        max-width: 60rem;
 
         @media screen and (max-width: 900px) {
             &-part{
@@ -78,9 +79,12 @@
 
         &-subtitle{
             color: v.$secondary;
+            margin-bottom: 5rem;
         }
         &-item{
-            margin: .5rem;
+            margin: 2rem;
+            transition-duration: 0.6s;
+
             &-body{
                 background-color: none;
             }
@@ -96,9 +100,12 @@
         &-item:hover{
             margin: .5rem;
             opacity: 30%;
-            transition-duration: 0.4s;
+            transition-duration: 0.6s;
+
             &-title{
                 font-size: 12px;
+                color: v.$secondary;
+
             }
             &-image{
                 width: auto;
