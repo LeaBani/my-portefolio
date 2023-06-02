@@ -51,6 +51,16 @@
         flex-direction: column;
         margin: 1rem 2rem 5rem 2rem;
         justify-content: space-between;
+
+        @media screen and (max-width: 900px) {
+            &-part{
+                display: inline-flex;
+                flex-wrap: wrap; 
+                justify-content: space-evenly;
+       
+            }
+            }
+
        
         &-section{
             display: inline-flex;
