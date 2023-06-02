@@ -19,17 +19,17 @@ function Projects() {
 
     <div className='Projects-list'>
 
-    {projectsData.map((elem) =>
+    {projectsData.map((elem, index) =>
 
     <Card key={elem.id} className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
         <Card.Img className="Projects-card-img" variant="top" src={elem.image} alt={elem.title} />
         <Card.Body>
-            <Card.Title as={Link} to={elem.link} className='Projects-card-title'># {elem.id} {elem.title}</Card.Title>
+            <Card.Title as={Link} to={elem.link} className='Projects-card-title'># {index+1} {elem.title}</Card.Title>
             <Card.Text className='Projects-card-text'>
                 {elem.description}
                     <span className='Projects-card-label'>
-                    {elem.tags.map((item) => 
-                        <Badge key={item} className="Projects-card-label-one" bg="secondary">
+                    {elem.tags.map((item, index) => 
+                        <Badge key={index} className="Projects-card-label-one" bg="secondary">
                             {item}
                         </Badge>
                     )}

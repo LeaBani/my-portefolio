@@ -16,7 +16,8 @@ const projectsData =
             "repo": "https://github.com/LeaBani/fit-work-front",
             "image": fitwork,
             "description": "This project was realized in Team (5 people). This application is about the best practise at work to maintain a good health.",
-            tags: ["ReactJS", "Redux", "Sass", "Bootstrap", "NodeJS", "Sqitch", "PostgreSQL", "Express", "Heroku", "eslint"]
+            tags: ["ReactJS", "Redux", "Sass", "Bootstrap", "NodeJS", "Sqitch", "PostgreSQL", "Express", "Heroku", "eslint"],
+            "main": true
         },
         {
             "id": 2,
@@ -25,7 +26,8 @@ const projectsData =
             "repo": "https://github.com/LeaBani/Trouve-ton-profil-GitHub",
             "image": searchprofile,
             "description": "This browser was created during my apprenticeship. It's about discovering ReactJS and the data fetch. You can research any GitHub profile with a key word.",
-            tags: ["ReactJS", "Semantic UI", "API"]
+            tags: ["ReactJS", "Semantic UI", "API"],
+            "main": false
         },
         {
             "id": 3,
@@ -34,7 +36,8 @@ const projectsData =
             "repo": "https://github.com/LeaBani/converter",
             "image": converter,
             "description": "The converter permitted me to discover the OOP (Object Oriented Programming) with ReactJS. With this app, you can convert any avaiable currency.",
-            tags: ["ReactJS","Prop-types","POO"]
+            tags: ["ReactJS","Prop-types","POO"],
+            "main": false
         },
         {
             "id": 4,
@@ -43,7 +46,8 @@ const projectsData =
             "repo": "https://github.com/LeaBani/my-portefolio",
             "image": portefolio,
             "description": "Yes, this Web App that you are currently visiting is my homemade portfolio.",
-            tags: ["ReactJS", "Bootstrap","Framer Motion","EmailJS"]
+            tags: ["ReactJS", "Bootstrap","Framer Motion","EmailJS"],
+            "main": false
         },
         {
             "id": 5,
@@ -52,7 +56,8 @@ const projectsData =
             "repo": "https://github.com/LeaBani/hangman-ts",
             "image": hangman,
             "description": "This project has been done to discover TypeScript with ReactJS. It's the famous game - the hangman.",
-            tags: ["ReactJS","TypeScript","Vite" ]
+            tags: ["ReactJS","TypeScript","Vite" ],
+            "main": false
         },
         {
             "id": 6,
@@ -61,7 +66,8 @@ const projectsData =
             "repo": "https://github.com/LeaBani/weather-app",
             "image": weatherapp,
             "description": "With this app, I've discovered a new Framework: Angular. I've been using TypeScript and an external API to collect the weather information.",
-            tags: ["Angular", "TypeScript","CSS","POO"]
+            tags: ["Angular", "TypeScript","CSS","POO"],
+            "main": false
         },
         {
             "id": 7,
@@ -70,7 +76,8 @@ const projectsData =
             "repo": "https://github.com/LeaBani/store-angular",
             "image": store,
             "description": "In order to learn to use a secure payment tool, I've used the Stripe API in this project. I've build a fake online store with an external API.",
-            tags: ["Angular","TypeScript","Tailwind","POO","Stripe","NodeJS","Express", "API"]
+            tags: ["Angular","TypeScript","Tailwind","POO","Stripe","NodeJS","Express", "API"],
+            "main": false
         },
         {
             "id": 8,
@@ -79,7 +86,8 @@ const projectsData =
             "repo": "https://github.com/LeaBani/statistics-with-recharts",
             "image": store,
             "description": "Here I am working on a Dashboard with the Youtube API and the RechartsJS library. Each visitor can visualize the Most Popular Videos of his region.",
-            tags: ["ReactJS","RechartsJS","Tailwind","Youtube API"]
+            tags: ["ReactJS","RechartsJS","Tailwind","Youtube API"],
+            "main": true
         },
         {
             "id": 9,
@@ -88,7 +96,8 @@ const projectsData =
             "repo": "https://github.com/florine89/Plant-front",
             "image": maplante,
             "description": "This project is a collaborative work. I am part of the project. This fullstack App should be an exchange platform for Plants lovers.",
-            tags: ["NextJS","NextAuth","TypeScript","Tailwind","Trefle API","Prisma","PostgreSQL" ]
+            tags: ["NextJS","NextAuth","TypeScript","Tailwind","Trefle API","Prisma","PostgreSQL" ],
+            "main": true
         }
         
     ];
