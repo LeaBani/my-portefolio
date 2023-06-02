@@ -6,6 +6,7 @@ import portefolio from './../assets/image/projects/portefolio.png';
 import weatherapp from './../assets/image/projects/weatherapp.png';
 import store from './../assets/image/projects/store.png';
 import maplante from './../assets/image/projects/plants.png';
+import statistics from './../assets/image/projects/statistics.png';
 
 const projectsData = 
     [
@@ -84,7 +85,7 @@ const projectsData =
             "title": "Statistics",
             "link": "https://github.com/LeaBani/statistics-with-recharts",
             "repo": "https://github.com/LeaBani/statistics-with-recharts",
-            "image": store,
+            "image": statistics,
             "description": "Here I am working on a Dashboard with the Youtube API and the RechartsJS library. Each visitor can visualize the Most Popular Videos of his region.",
             tags: ["ReactJS","RechartsJS","Tailwind","Youtube API"],
             "main": true

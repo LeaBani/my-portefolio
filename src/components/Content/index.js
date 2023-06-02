@@ -86,12 +86,13 @@ function Content({isDark}) {
 
         <h5 className="Content-question">You can find more of my code on my GitHub account and on my projects page.</h5>
 
+        <div className='Content-projects'>
 
         {mainProjects.map((elem, index) =>
           <Card key={elem.id} className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
               <Card.Img className="Projects-card-img" variant="top" src={elem.image} alt={elem.title} />
               <Card.Body>
-                  <Card.Title as={Link} to={elem.link} className='Projects-card-title'># {index+1} {elem.title}</Card.Title>
+                  <Card.Title as={Link} to={elem.link} className='Projects-card-title'># {elem.title}</Card.Title>
                   <Card.Text className='Projects-card-text'>
                       {elem.description}
                           <span className='Projects-card-label'>
@@ -108,6 +109,8 @@ function Content({isDark}) {
           </Card>
         
         )}
+
+        </div>
         
     </div>
   );

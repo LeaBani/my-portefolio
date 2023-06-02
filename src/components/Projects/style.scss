@@ -37,10 +37,13 @@
             position: absolute;
             top: 14rem;
             width: 16rem;
+            text-align: justify;
 
         }
 
         &-label{
+            position: absolute;
+            top: 9rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -48,6 +51,8 @@
             
             &-one{
                 margin-bottom: .2rem;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
             }
         }
 
