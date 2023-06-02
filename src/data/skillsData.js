@@ -23,7 +23,7 @@ import jest from './../assets/image/stack/jest.png';
 import github from './../assets/image/github.png';
 
 
-const dataFrontend = 
+const data = 
     [
         {
             "id": 1,
@@ -138,7 +138,7 @@ const dataFrontend =
         
     ];
     
-        export default dataFrontend;
+        export default data;
 
 
 

@@ -4,13 +4,13 @@ import AnimatedText from './AnimatedText';
 
 import { Link } from 'react-router-dom';
 
-import dataFrontend from '../../data/data'
+import skillsData from '../../data/skillsData'
 
 function Content({isDark}) {
 
-  const frontendData = dataFrontend.filter(elem => elem.type === "frontend");
-  const backendData = dataFrontend.filter(elem => elem.type === "backend");
-  const devopsData = dataFrontend.filter(elem => elem.type === "devops");
+  const frontendData = skillsData.filter(elem => elem.type === "frontend");
+  const backendData = skillsData.filter(elem => elem.type === "backend");
+  const devopsData = skillsData.filter(elem => elem.type === "devops");
    
   return (
     <div className="Content">
@@ -76,6 +76,8 @@ function Content({isDark}) {
 
 
         <h4 className="Content-question"><Link to="/projects"># My projects</Link></h4>
+
+        
 
 
 

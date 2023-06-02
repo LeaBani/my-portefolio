@@ -20,6 +20,10 @@
 
     &-card{
         margin: 1rem;
+        &-img{
+            object-fit: contain;
+            max-height: 11rem;
+        }
 
         &-title{
             position: absolute;
