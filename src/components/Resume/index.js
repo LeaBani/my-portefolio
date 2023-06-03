@@ -1,6 +1,6 @@
 import './style.scss';
 
-import profile from '../../assets/image/profile.jpg';
+// import profile from '../../assets/image/profile.jpg';
 import github from '../../assets/image/github.png';
 import linkedin from '../../assets/image/linkedin.png';
 import twitter from '../../assets/image/twitter.png';
@@ -17,6 +17,7 @@ import fileDownload from 'js-file-download';
 import axios from 'axios';
 
 import { Link } from 'react-router-dom';
+// import Experience from './Experience';
 
 function Resume() {
 
@@ -32,7 +33,7 @@ function Resume() {
     <div className="Resume">
     <h1 className='Resume-title'>My Resume</h1>
 
-    <Image className='Resume-image' src={profile} thumbnail="true" roundedCircle="true" alt='my profile image'/>
+    {/* <Image className='Resume-image' src={profile} thumbnail="true" roundedCircle="true" alt='my profile image'/> */}
 
     <div className='Resume-icon'>
     <Link to='https://github.com/LeaBani'><Image className='Resume-icon-item' src={github} roundedCircle="true" alt='github-logo'/></Link> 
@@ -72,11 +73,6 @@ function Resume() {
     </Accordion>
 
     </div>
-    
-    <div className='Resume-end'>
-    If you have any questions, please feel free to get in touch,
-    I am looking forward to your feedback!
-    </div>
 
     <div className='Resume-download'>
     <div className='Resume-download-item'>Download full Resume in french</div>
@@ -85,6 +81,14 @@ function Resume() {
     <div className='Resume-download-item'>Download full Resume in english</div>
     <Button variant="outline-primary" onClick={() => handleClick(cvEnglish, 'CV-Lea-Bani-EN.pdf')}>Download</Button>
     </div>
+
+    {/* <Experience /> */}
+    
+    <div className='Resume-end'>
+    If you have any questions, please feel free to get in touch,
+    I am looking forward to your feedback!
+    </div>
+
     </div>
   );
 }

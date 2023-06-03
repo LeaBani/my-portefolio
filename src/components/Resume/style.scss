@@ -24,6 +24,7 @@
         margin: 3rem;
         text-align: justify;
         width: 40rem;
+        margin-bottom: 5rem;
     }
 
     @media screen and (max-width: 650px) {
@@ -33,9 +34,9 @@
     }
 
     &-end{
-        margin: 2rem;
         text-align: justify;
         color: v.$secondary;
+        margin-bottom: 6rem;
     }
     &-download{
         display: flex;
@@ -48,4 +49,54 @@
             margin: 1rem;
         }
     }
+}
+
+.Experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+      
+    
+    &-experience{
+        margin: 4rem;
+        
+        &-list{
+            margin: 10rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: justify;
+        }
+    
+        &-card{
+            margin: 1rem;
+            box-shadow: 5px 5px 4px v.$secondary;
+            
+            &-item{
+                position: absolute;
+                bottom: 1.3rem;
+                right: 1.7rem;
+                max-width: 7rem;
+                max-height: 4rem;
+            }
+        }
+
+        &-card:hover{
+            background-color: v.$light;
+            box-shadow: 4px 4px v.$warning;
+            transition-duration: 800ms;
+        }
+    }
+    &-progress{
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 1rem;
+    }
+}
+
+.button{
+    position: absolute;
+    bottom: 1rem;
+
 }

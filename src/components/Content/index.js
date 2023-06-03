@@ -1,194 +1,238 @@
 import './style.scss';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-
-import { useEffect } from 'react';
-import {
-  motion,
-  useAnimation,
-} from "framer-motion";
-import { useInView } from 'react-intersection-observer';
 
 import AnimatedText from './AnimatedText';
+
 import { Link } from 'react-router-dom';
+import Image from 'react-bootstrap/Image';
 
-import js from '../../assets/image/stack/js.png';
-import ts from '../../assets/image/stack/ts.png';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge';
 
-import node from '../../assets/image/stack/node.png';
-import html from '../../assets/image/stack/html.png';
-import react from '../../assets/image/stack/react.png';
-import sass from '../../assets/image/stack/sass.png';
-import psql from '../../assets/image/stack/psql.png';
-import bootstrap from '../../assets/image/stack/bootstrap.png';
-import git from '../../assets/image/stack/git.png';
-import css from '../../assets/image/stack/css.png';
-import angular from '../../assets/image/stack/angular.png';
+import skillsData from '../../data/skillsData';
+import projectsData from '../../data/projectsData';
 
-import ob from '../../assets/image/work/ob.png';
-import lidl from '../../assets/image/work/lidl.png';
-import mcdo from '../../assets/image/work/McDo.png';
+import { useInView } from 'react-intersection-observer';
+import {
+  motion,
+  useAnimation
+} from "framer-motion";
+import { useEffect, useState } from 'react';
 
-import { Image } from 'react-bootstrap';
-
+import profile from '../../assets/image/profile.jpg';
+import github from '../../assets/image/github.png';
+import linkedin from '../../assets/image/linkedin.png';
+import twitter from '../../assets/image/twitter.png';
+import insta from '../../assets/image/insta.png';
 
 function Content({isDark}) {
 
-    // card animation
+   // card animation
     const { ref, inView } = useInView();
     const animation = useAnimation();
 
+    console.log(inView)
     useEffect(() => {
+      // animation
         if (inView) {
             animation.start({
                 x: 0,
                 transition: {
-                    type: 'spring', duration: 2,  bounce: 0.5,
+                    type: 'bounce', duration: 1.5,  bounce: 0.5,
                 }
             });
         }
         if (!inView) {
             animation.start({x: '-100vw'})
         }
+
+      // screen size
+        const handleWindowResize = () => {
+          setWindowWidth(window.innerWidth);
+        };
+    
+        window.addEventListener('resize', handleWindowResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleWindowResize);
+        };
         
     },[inView, animation]);
-    
+
+  // screen size for responsive animation
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // fetch data from file
+  const frontendData = skillsData.filter(elem => elem.type === "frontend");
+  const backendData = skillsData.filter(elem => elem.type === "backend");
+  const devopsData = skillsData.filter(elem => elem.type === "devops");
+  const microsoftData = skillsData.filter(elem => elem.type === "microsoft");
+
+  const mainProjects = projectsData.filter(elem => elem.main === true);
+   
   return (
     <div className="Content">
 
         <AnimatedText isDark={isDark} text="&#60; Hello World /&#62;"/>
 
-        <div className='Content-icon'>
-        <Image className='Content-icon-item' src={html} alt='html'/>
-        <Image className='Content-icon-item' src={css} alt='css'/>
-        <Image className='Content-icon-item' src={react} alt='react'/>
-        <Image className='Content-icon-item' src={angular} alt='angular'/>
-        <Image className='Content-icon-item' src={bootstrap} alt='bootstrap'/>
-        <Image className='Content-icon-item' src={sass} alt='sass'/>
+        <p className="Content-description">Here I am, Lea, Web Developper. Have a look on my Projects, and my Resume. 
+        I would be happy to get in touch with you to share my experience !</p>
 
-        <Image className='Content-icon-item' src={js} alt='javascript'/>
-        <Image className='Content-icon-item' src={ts} alt='typescript'/>
-        <Image className='Content-icon-item' src={node} alt='node'/>
-        <Image className='Content-icon-item' src={psql} alt='psql'/>
 
-        <Image className='Content-icon-item' src={git} alt='git'/>
+        <Link to="/my-resume" className="Content-question"><h2># My Resume</h2></Link>
+
+        <Image className='Resume-image' src={profile} thumbnail="true" roundedCircle="true" alt='my profile image'/>
+
+        <div className='Resume-icon'>
+        <Link to='https://github.com/LeaBani'><Image className='Resume-icon-item' src={github} roundedCircle="true" alt='github-logo'/></Link> 
+        <Link to='https://www.linkedin.com/in/lea-bani/'><Image className='Resume-icon-item' src={linkedin} roundedCircle="true" alt='linkedin-logo'/></Link>
+        <Link to='https://twitter.com/leabani7'><Image className='Resume-icon-item' src={twitter} roundedCircle="true" alt='twitter-logo'/></Link>
+        <Link to='https://www.instagram.com/lea_laila91940/'><Image className='Resume-icon-item' src={insta} roundedCircle="true" alt='insta-logo'/></Link>
         </div>
-
-        <h2 className="Content-description">Here I am, Lea, Web Developper. Have a look on my Projects, and my Resume. 
-        I would be happy to get in touch with you to share my experience !</h2>
 
         <h3 className="Content-question">How did I get to Web Developpement ?</h3>
 
+        <p className="Content-description">After 9 years in the supply chain management area, I realized that the field could no longer do without new technologies. I wanted to go behind my screen and understand where all this data was coming from. That's why I decided to pursue training in web development. I learned programming methodology, JavaScript, React.js, Node.js, PostgreSQL, and more. I adapt quickly to new environments, which is why I continued developing on my own with new technologies like Next.js, Angular, TypeScript, etc. I am sociable and enjoy interacting with others. I am always eager to learn new things and meet my clients' needs. I have an open-minded and positive mindset in all circumstances.</p>
 
-        <div className="Content-experience" ref={ref}>
-        <motion.div 
-            className="Content-experience-list"
-            animate={animation}
-        >
-        <Card className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
-            <Card.Body>
-                <Card.Title>February - March 2023</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">ReactJS Developper | Full remote</Card.Subtitle>
-                <Card.Text>
-                <li>"Fit Work": Application concerning best practise at work </li>
-                <li>Build this application from scratch with Agile method.</li>
-                <li>Responsible of the good implementation, Pull Request and Code Review. </li>
-                
-                
-                </Card.Text>
-                    <Button className="button" as={Link} to="/projects">Go to my Projects</Button>
-            </Card.Body>
-        </Card>
 
-                <Card className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
-            <Card.Body>
-                <Card.Title>2020 - 2022</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Supply Chain | Project Manager | @Lidl Headquarter</Card.Subtitle>
-                <Card.Text>
-                <li>Logistics planning of orders and deliveries at national level</li>
-                <li>Knowledge of logistics processes (truck filling, optimization of logistics routes).</li>
-                <li>Supplier care and close communication with purchasing department </li>
-                <li>Team Management</li>
-                <li>Project Management & analytics</li>
-                <Image className='Content-experience-card-item' src={lidl} alt='lidl-logo'/>
-                </Card.Text>
-                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
-            </Card.Body>
-        </Card>
-        
-        <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
-            <Card.Body>
-                <Card.Title>2015 - 2019</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Supply Chain | Manager | @Lidl Warehouse</Card.Subtitle>
-                <Card.Text>
-                <li>Daily supplier orders, trend calculation, sales forecast, Stores openings support, inventory control</li>
-                <li>External Storage Organisation"</li>
-                <li>Maintenance of stocks in an external warehouse for sensitive products: fruits, vegetables and flowers (90 stores)</li>
-                <Image className='Content-experience-card-item' src={lidl} alt='lidl-logo'/>
 
-                </Card.Text>
-                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
-            </Card.Body>
-        </Card>
+        <h2 className="Content-question"># My skills</h2>
 
-        <Card  className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
-            <Card.Body>
-                <Card.Title>2013 - 2014</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Supply Chain | Assistant | @Lidl Headquarter</Card.Subtitle>
-                <Card.Text>
-                <li>Project Manager Assistant: analytics, powerpoint</li>
-                <li>Processes Translations French to German/German to French</li>
-                <li>Organization of seminars</li>
-                <li>Daily communication sheet preparation from the Headquarter to the 25 french Warehouses</li>
-                <Image className='Content-experience-card-item' src={lidl} alt='lidl-logo'/>
+        <div className='Content-icon'>
 
-                </Card.Text>
-                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
-            </Card.Body>
-        </Card>
-
-        <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
-            <Card.Body>
-                <Card.Title>2010 - 2013</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Fast Food | Employee | @McDonald's</Card.Subtitle>
-                <Card.Text>
-                <li>Cashier and customer care</li>
-                <li>Kitchen, organization, respect of the processes</li>
-                <Image className='Content-experience-card-item' src={mcdo} alt='mcdo-logo'/>
-
-                </Card.Text>
-                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
-            </Card.Body>
-        </Card>
-        <Card  className="Content-experience-card" style={{ width: '20rem', height: '30rem' }}>
-            <Card.Body>
-                <Card.Title>2013</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Marketing | Internship | @France Plongée, Thailand</Card.Subtitle>
-                <Card.Text>
-                <li>Looking for partnership to build the "French connexion" on the island</li>
-                <li>Responsible for the shop, and material rental, customer care</li>
-                <li>Work on the social medias (Facebook, Website with Wordpress)</li>
-
-                </Card.Text>
-                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
-            </Card.Body>
-        </Card>
-
-        <Card className="Content-experience-card"  style={{ width: '20rem', height: '30rem' }}>
-            <Card.Body>
-                <Card.Title>2012</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Sales | Assistant | @Otto Bock</Card.Subtitle>
-                <Card.Text>
-                <li>Sending orders with SAP</li>
-                <li>Contact with the commercials, schedule events and meeting</li>
-                <Image className='Content-experience-card-item' src={ob} alt='otto bock -logo'/>
-
-                </Card.Text>
-                <Button className="button" as={Link} to="/my-resume">Go to Resume</Button>
-            </Card.Body>
-        </Card>
-        </motion.div>
+        <h3 className="Content-icon-subtitle">## Frontend</h3>
+        <div className='Content-icon-part'>
+        {frontendData.map((elem) => 
+        <div className='Content-icon-section' key={elem.id}>
+        <div className='Content-icon-item'>
+          <div className='Content-icon-item-body'>
+            <div className='Content-icon-item-title'>{elem.title}</div>
+          </div>
+          <img alt="stack" key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
         </div>
+        </div>
+        )}
+        </div>
+
+        <h3 className="Content-icon-subtitle">## Backend</h3>
+
+        <div className='Content-icon-part'>
+        {backendData.map((elem) => 
+        <div className='Content-icon-section' key={elem.id}>
+        <div className='Content-icon-item'>
+          <div className='Content-icon-item-body'>
+            <div className='Content-icon-item-title'>{elem.title}</div>
+          </div>
+          <img alt="stack" key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
+        </div>
+        </div>
+        )}
+        </div>
+
+        <h3 className="Content-icon-subtitle">## DevOps</h3>
+
+        <div className='Content-icon-part'>
+        {devopsData.map((elem) => 
+        <div className='Content-icon-section' key={elem.id}>
+        <div className='Content-icon-item'>
+          <div className='Content-icon-item-body'>
+            <div className='Content-icon-item-title'>{elem.title}</div>
+          </div>
+          <img alt="stack" key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
+        </div>
+        </div>
+        )}
+        </div>
+
+        <h3 className="Content-icon-subtitle">## Microsoft</h3>
+
+        <div className='Content-icon-part'>
+        {microsoftData.map((elem) => 
+        <div className='Content-icon-section' key={elem.id}>
+        <div className='Content-icon-item'>
+          <div className='Content-icon-item-body'>
+            <div className='Content-icon-item-title'>{elem.title}</div>
+          </div>
+          <img alt="stack" key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
+        </div>
+        </div>
+        )}
+        </div>
+
+        </div>
+
+
+        <Link to="/projects" className="Content-question"><h2># My Projects</h2></Link>
+
+        <h5 className="Content-question" ref={ref}>You can find more of my code on <Link as={Link} to='https://github.com/LeaBani'>my GitHub account</Link> and on <Link as={Link} to='/projects'>my projects page</Link>.</h5>
+
+
+          {windowWidth>600 && (
+        <motion.div 
+          className='Content-projects' 
+          animate={animation}
+          >
+
+        {mainProjects.map((elem) =>
+          <Card key={elem.id} className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
+              <Card.Img className="Projects-card-img" variant="top" src={elem.image} alt={elem.title} />
+              <Card.Body>
+                  <Card.Title as={Link} to={elem.link} className='Projects-card-title'># {elem.title}</Card.Title>
+                  <Card.Text className='Projects-card-text'>
+                      {elem.description}
+                          <span className='Projects-card-label'>
+                          {elem.tags.map((item, index) => 
+                              <Badge key={index} className="Projects-card-label-one" bg="secondary">
+                                  {item}
+                              </Badge>
+                          )}
+
+                          </span>
+                  </Card.Text>
+                      <Button variant="primary" className="Projects-card-button" as={Link} to={elem.repo}>Got to repository</Button>
+              </Card.Body>
+          </Card>
+        
+        )}
+
+        </motion.div>
+
+          )}
+
+          {windowWidth<600 && (
+        <div 
+          className='Content-projects' 
+          >
+
+        {mainProjects.map((elem) =>
+          <Card key={elem.id} className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
+              <Card.Img className="Projects-card-img" variant="top" src={elem.image} alt={elem.title} />
+              <Card.Body>
+                  <Card.Title as={Link} to={elem.link} className='Projects-card-title'># {elem.title}</Card.Title>
+                  <Card.Text className='Projects-card-text'>
+                      {elem.description}
+                          <span className='Projects-card-label'>
+                          {elem.tags.map((item, index) => 
+                              <Badge key={index} className="Projects-card-label-one" bg="secondary">
+                                  {item}
+                              </Badge>
+                          )}
+
+                          </span>
+                  </Card.Text>
+                      <Button variant="primary" className="Projects-card-button" as={Link} to={elem.repo}>Got to repository</Button>
+              </Card.Body>
+          </Card>
+        
+        )}
+
+        </div>
+
+          )}
+
+        <h3 className="Content-icon-subtitle">Let's work together !</h3>
+
+        
     </div>
   );
 }
