@@ -3,6 +3,7 @@ import './style.scss';
 import AnimatedText from './AnimatedText';
 
 import { Link } from 'react-router-dom';
+import Image from 'react-bootstrap/Image';
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -16,9 +17,13 @@ import {
   motion,
   useAnimation
 } from "framer-motion";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-
+import profile from '../../assets/image/profile.jpg';
+import github from '../../assets/image/github.png';
+import linkedin from '../../assets/image/linkedin.png';
+import twitter from '../../assets/image/twitter.png';
+import insta from '../../assets/image/insta.png';
 
 function Content({isDark}) {
 
@@ -28,6 +33,7 @@ function Content({isDark}) {
 
     console.log(inView)
     useEffect(() => {
+      // animation
         if (inView) {
             animation.start({
                 x: 0,
@@ -39,9 +45,24 @@ function Content({isDark}) {
         if (!inView) {
             animation.start({x: '-100vw'})
         }
+
+      // screen size
+        const handleWindowResize = () => {
+          setWindowWidth(window.innerWidth);
+        };
+    
+        window.addEventListener('resize', handleWindowResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleWindowResize);
+        };
         
     },[inView, animation]);
 
+  // screen size for responsive animation
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // fetch data from file
   const frontendData = skillsData.filter(elem => elem.type === "frontend");
   const backendData = skillsData.filter(elem => elem.type === "backend");
   const devopsData = skillsData.filter(elem => elem.type === "devops");
@@ -60,9 +81,20 @@ function Content({isDark}) {
 
         <Link to="/my-resume" className="Content-question"><h2># My Resume</h2></Link>
 
+        <Image className='Resume-image' src={profile} thumbnail="true" roundedCircle="true" alt='my profile image'/>
+
+        <div className='Resume-icon'>
+        <Link to='https://github.com/LeaBani'><Image className='Resume-icon-item' src={github} roundedCircle="true" alt='github-logo'/></Link> 
+        <Link to='https://www.linkedin.com/in/lea-bani/'><Image className='Resume-icon-item' src={linkedin} roundedCircle="true" alt='linkedin-logo'/></Link>
+        <Link to='https://twitter.com/leabani7'><Image className='Resume-icon-item' src={twitter} roundedCircle="true" alt='twitter-logo'/></Link>
+        <Link to='https://www.instagram.com/lea_laila91940/'><Image className='Resume-icon-item' src={insta} roundedCircle="true" alt='insta-logo'/></Link>
+        </div>
+
         <h3 className="Content-question">How did I get to Web Developpement ?</h3>
 
-        <div>sxsfvcx</div>
+        <p className="Content-description">After 9 years in the supply chain management area, I realized that the field could no longer do without new technologies. I wanted to go behind my screen and understand where all this data was coming from. That's why I decided to pursue training in web development. I learned programming methodology, JavaScript, React.js, Node.js, PostgreSQL, and more. I adapt quickly to new environments, which is why I continued developing on my own with new technologies like Next.js, Angular, TypeScript, etc. I am sociable and enjoy interacting with others. I am always eager to learn new things and meet my clients' needs. I have an open-minded and positive mindset in all circumstances.</p>
+
+
 
         <h2 className="Content-question"># My skills</h2>
 
@@ -134,6 +166,8 @@ function Content({isDark}) {
 
         <h5 className="Content-question" ref={ref}>You can find more of my code on <Link as={Link} to='https://github.com/LeaBani'>my GitHub account</Link> and on <Link as={Link} to='/projects'>my projects page</Link>.</h5>
 
+
+          {windowWidth>600 && (
         <motion.div 
           className='Content-projects' 
           animate={animation}
@@ -163,6 +197,38 @@ function Content({isDark}) {
 
         </motion.div>
 
+          )}
+
+          {windowWidth<600 && (
+        <div 
+          className='Content-projects' 
+          >
+
+        {mainProjects.map((elem) =>
+          <Card key={elem.id} className='Projects-card' style={{ width: '18rem', height: '35rem' }}>
+              <Card.Img className="Projects-card-img" variant="top" src={elem.image} alt={elem.title} />
+              <Card.Body>
+                  <Card.Title as={Link} to={elem.link} className='Projects-card-title'># {elem.title}</Card.Title>
+                  <Card.Text className='Projects-card-text'>
+                      {elem.description}
+                          <span className='Projects-card-label'>
+                          {elem.tags.map((item, index) => 
+                              <Badge key={index} className="Projects-card-label-one" bg="secondary">
+                                  {item}
+                              </Badge>
+                          )}
+
+                          </span>
+                  </Card.Text>
+                      <Button variant="primary" className="Projects-card-button" as={Link} to={elem.repo}>Got to repository</Button>
+              </Card.Body>
+          </Card>
+        
+        )}
+
+        </div>
+
+          )}
 
         <h3 className="Content-icon-subtitle">Let's work together !</h3>
 
