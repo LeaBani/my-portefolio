@@ -20,6 +20,9 @@ import nextjs from './../assets/image/stack/nextjs.png';
 import heroku from './../assets/image/stack/heroku.png';
 import jest from './../assets/image/stack/jest.png';
 import vba from './../assets/image/stack/excel.png';
+import python from './../assets/image/stack/python.png';
+import bi from './../assets/image/stack/bi.png';
+import sql from './../assets/image/stack/sql.png';
 
 import github from './../assets/image/github.png';
 
@@ -140,13 +143,31 @@ const data =
             "id": 19,
             "title": "VBA",
             "image": vba,
-            "type": "microsoft"
+            "type": "data"
         },
         {
             "id": 20,
             "title": "Tailwind",
             "image": tailwind,
             "type": "frontend"
+        },
+        {
+            "id": 21,
+            "title": "Python",
+            "image": python,
+            "type": "data"
+        },
+        {
+            "id": 22,
+            "title": "BI",
+            "image": bi,
+            "type": "data"
+        },
+        {
+            "id": 23,
+            "title": "SQL",
+            "image": sql,
+            "type": "backend"
         }
         
     ];
