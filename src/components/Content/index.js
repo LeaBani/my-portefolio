@@ -66,16 +66,16 @@ function Content({isDark}) {
   const frontendData = skillsData.filter(elem => elem.type === "frontend");
   const backendData = skillsData.filter(elem => elem.type === "backend");
   const devopsData = skillsData.filter(elem => elem.type === "devops");
-  const microsoftData = skillsData.filter(elem => elem.type === "microsoft");
+  const dataData = skillsData.filter(elem => elem.type === "data");
 
   const mainProjects = projectsData.filter(elem => elem.main === true);
    
   return (
     <div className="Content">
 
-        <AnimatedText isDark={isDark} text="&#60; Hello World /&#62;"/>
+        <AnimatedText isDark={isDark} text="Who Am I?"/>
 
-        <p className="Content-description">Here I am, Lea, Web Developper. Have a look on my Projects, and my Resume. 
+        <p className="Content-description">Hey, I am Lea, <b>Master in Supply Chain Management</b> & <b>Bachelor in Computer Science</b> Candidate. Have a look on my Projects, and my Resume. 
         I would be happy to get in touch with you to share my experience !</p>
 
 
@@ -90,9 +90,7 @@ function Content({isDark}) {
         <Link to='https://www.instagram.com/lea_laila91940/'><Image className='Resume-icon-item' src={insta} roundedCircle="true" alt='insta-logo'/></Link>
         </div>
 
-        <h3 className="Content-question">How did I get to Web Developpement ?</h3>
-
-        <p className="Content-description">After 9 years in the supply chain management area, I realized that the field could no longer do without new technologies. I wanted to go behind my screen and understand where all this data was coming from. That's why I decided to pursue training in web development. I learned programming methodology, JavaScript, React.js, Node.js, PostgreSQL, and more. I adapt quickly to new environments, which is why I continued developing on my own with new technologies like Next.js, Angular, TypeScript, etc. I am sociable and enjoy interacting with others. I am always eager to learn new things and meet my clients' needs. I have an open-minded and positive mindset in all circumstances.</p>
+        <p className="Content-description">After 9 years in the supply chain management area, I realized that the field could no longer do without new technologies. I wanted to go behind the user interface and understand where all this data was coming from. That's why I decided to pursue training in computer science. I learned programming methodology, JavaScript, React.js, Node.js, PostgreSQL, and more. I adapt quickly to new environments, which is why I continued developing on my own with new technologies like Next.js, Angular, TypeScript, etc. I am sociable and enjoy interacting with others. I am always eager to learn new things and go forward for researching explanations or solutions. I have an open-minded and positive mindset in all circumstances. In 2023 - 2024, I will focus on studying. I am currently enrolled in one Master program in Supply Chain research, and one Bachelor in Computer Science. I am looking forward to apply for PhD positions, in France or overseas in the Operation Mangement field. As a profesionnal, I liked to share my experience with freshners as liked to explain and teach the complexity of Supply chain management in retail.</p>
 
 
 
@@ -144,19 +142,19 @@ function Content({isDark}) {
         )}
         </div>
 
-        <h3 className="Content-icon-subtitle">## Microsoft</h3>
+        <h3 className="Content-icon-subtitle">## Data</h3>
 
         <div className='Content-icon-part'>
-        {microsoftData.map((elem) => 
-        <div className='Content-icon-section' key={elem.id}>
-        <div className='Content-icon-item'>
-          <div className='Content-icon-item-body'>
-            <div className='Content-icon-item-title'>{elem.title}</div>
+          {dataData.map((elem) => 
+          <div className='Content-icon-section' key={elem.id}>
+          <div className  ='Content-icon-item'>
+            <div className='Content-icon-item-body'>
+              <div className='Content-icon-item-title'>{elem.title}</div>
+            </div>
+            <img alt="stack" key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
           </div>
-          <img alt="stack" key={elem.id} variant="bottom" src={elem.image} className='Content-icon-item-image'/>
-        </div>
-        </div>
-        )}
+          </div>
+          )}
         </div>
 
         </div>
