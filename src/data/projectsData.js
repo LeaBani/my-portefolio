@@ -105,9 +105,19 @@ const projectsData =
             "title": "Costs Optimization Tool",
             "link": "https://github.com/LeaBani/VBA_project_BusinessModel",
             "repo": "https://github.com/LeaBani/VBA_project_BusinessModel",
-            "image": maplante,
+            // "image": maplante,
             "description": "A customizable tool for calculating multimodal transport prices in the Nouvelle-Aquitaine region, designed for businesses, shippers, and local authorities. Built with Excel, PowerPivot, and VBA to automate tasks and provide an intuitive user interface.",
             tags: ["VBA","PowerPivot","Model"],
+            "main": true
+        },        
+        {
+            "id": 11,
+            "title": "Data Vizualisation",
+            "link": "https://github.com/LeaBani/python_dataViz",
+            "repo": "https://github.com/LeaBani/python_dataViz",
+            // "image": maplante,
+            "description": "This repository contains key components used in a data analysis project.",
+            tags: ["Python","NumPy","Matplotlib", "Wordcloud"],
             "main": true
         }
 
