@@ -102,7 +102,7 @@ const projectsData =
         },        
         {
             "id": 10,
-            "title": "Costs Optimization Tool",
+            "title": "Costs Optimization",
             "link": "https://github.com/LeaBani/VBA_project_BusinessModel",
             "repo": "https://github.com/LeaBani/VBA_project_BusinessModel",
             // "image": maplante,
@@ -112,7 +112,7 @@ const projectsData =
         },        
         {
             "id": 11,
-            "title": "Data Vizualisation",
+            "title": "Data Viz",
             "link": "https://github.com/LeaBani/python_dataViz",
             "repo": "https://github.com/LeaBani/python_dataViz",
             // "image": maplante  ,
