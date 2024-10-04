@@ -99,7 +99,18 @@ const projectsData =
             "description": "This project is a collaborative work. This fullstack App should be an exchange platform for Plants lovers.",
             tags: ["NextJS","NextAuth","TypeScript","Tailwind","Trefle API","Prisma","PostgreSQL" ],
             "main": true
+        },        
+        {
+            "id": 10,
+            "title": "Costs Optimization Tool",
+            "link": "https://github.com/LeaBani/VBA_project_BusinessModel",
+            "repo": "https://github.com/LeaBani/VBA_project_BusinessModel",
+            "image": maplante,
+            "description": "A customizable tool for calculating multimodal transport prices in the Nouvelle-Aquitaine region, designed for businesses, shippers, and local authorities. Built with Excel, PowerPivot, and VBA to automate tasks and provide an intuitive user interface.",
+            tags: ["VBA","PowerPivot","Model"],
+            "main": true
         }
+
         
     ];
     
