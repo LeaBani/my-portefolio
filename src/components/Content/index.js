@@ -75,7 +75,7 @@ function Content({isDark}) {
 
         <AnimatedText isDark={isDark} text="Who Am I?"/>
 
-        <p className="Content-description">Hey, I am Lea, <b>Master in Supply Chain Management</b> & <b>Bachelor in Computer Science</b> Candidate. Have a look on my Projects, and my Resume. 
+        <p className="Content-description">Hey, I am Lea, and I have a strong interest in complex system engineering. Have a look on my Projects, and my Resume. 
         I would be happy to get in touch with you to share my experience !</p>
 
 
