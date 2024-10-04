@@ -90,7 +90,7 @@ const projectsData =
             "image": statistics,
             "description": "This is a dashboard with the Youtube API. Each visitor can visualize the Most Popular Videos of his region.",
             tags: ["ReactJS","RechartsJS","Tailwind","Youtube API"],
-            "main": true
+            "main": false
         },
         {
             "id": 9,
