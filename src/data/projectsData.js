@@ -115,7 +115,7 @@ const projectsData =
             "title": "Data Vizualisation",
             "link": "https://github.com/LeaBani/python_dataViz",
             "repo": "https://github.com/LeaBani/python_dataViz",
-            // "image": maplante,
+            // "image": maplante  ,
             "description": "This repository contains key components used in a data analysis project.",
             tags: ["Python","NumPy","Matplotlib", "Wordcloud"],
             "main": true
