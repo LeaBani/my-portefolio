@@ -7,6 +7,8 @@ import weatherapp from './../assets/image/projects/weatherapp.png';
 import store from './../assets/image/projects/store.png';
 import maplante from './../assets/image/projects/plants.png';
 import statistics from './../assets/image/projects/statistics.png';
+import wordcloud from './../assets/image/projects/wordcloud.png';
+import busmod from './../assets/image/projects/businessmodel.png';
 
 const projectsData = 
     [
@@ -102,20 +104,20 @@ const projectsData =
         },        
         {
             "id": 10,
-            "title": "Costs Optimization Tool",
+            "title": "Costs Opti",
             "link": "https://github.com/LeaBani/VBA_project_BusinessModel",
             "repo": "https://github.com/LeaBani/VBA_project_BusinessModel",
-            // "image": maplante,
-            "description": "A customizable tool for calculating multimodal transport prices in the Nouvelle-Aquitaine region, designed for businesses, shippers, and local authorities. Built with Excel, PowerPivot, and VBA to automate tasks and provide an intuitive user interface.",
-            tags: ["VBA","PowerPivot","Model"],
+            "image": busmod,
+            "description": "A customizable tool for calculating multimodal transport prices, inlcuding inland waterway, designed for businesses, shippers, and local authorities.",
+            tags: ["VBA","PowerPivot","Business Model", "User Interface"],
             "main": true
         },        
         {
             "id": 11,
-            "title": "Data Vizualisation",
+            "title": "Data Viz",
             "link": "https://github.com/LeaBani/python_dataViz",
             "repo": "https://github.com/LeaBani/python_dataViz",
-            // "image": maplante  ,
+            "image": wordcloud  ,
             "description": "This repository contains key components used in a data analysis project.",
             tags: ["Python","NumPy","Matplotlib", "Wordcloud"],
             "main": true
