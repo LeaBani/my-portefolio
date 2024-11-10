@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import Article1 from './article3';
+import Article1 from './article1';
 import Article2 from '../Articles/article2';
 import Article3 from './article3';
 

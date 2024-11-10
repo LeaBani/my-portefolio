@@ -28,7 +28,7 @@ function Articles() {
         <Card.Text>
         {elem.description}
         </Card.Text>
-        <Button variant="primary" as={Link} to={`/article/${elem.id}`}>Go somewhere</Button>
+        <Button variant="primary" as={Link} to={`/article/${elem.id}`}>Read Article</Button>
       </Card.Body>
     </Card>
 

@@ -5,6 +5,9 @@ const Article3 = () => {
   return (
     <div>
 
+<h1>
+Evaluating Model Robustness for Multimodal Transport through Discrete Event Simulation
+</h1>
 We then implemented a computational simulation to analyze transport flows within the inland waterway and multimodal network. This simulation models real-world dynamics by integrating variability based on historical data and insights gathered from interviews. Through this approach, we can assess the model’s robustness under real conditions, taking into account unexpected factors.
 This approach replicates real-world dynamics by integrating variability based on historical events and estimates gathered from interviews. Through this simulation, we can analyze the model’s robustness in real conditions, accounting for unexpected factors. Accurately measuring these variables in a simulated environment allows us not only to anticipate potential deviations from theoretical outcomes but also to forecast the impacts of potential incidents in an uncertain context.
 
