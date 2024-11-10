@@ -16,6 +16,7 @@ function NavBar({isDark}) {
             <Nav.Link as={NavLink} to="/" eventKey="Home">HOME</Nav.Link>
             <Nav.Link as={NavLink} to="/my-resume" eventKey="Resume">MY RESUME</Nav.Link>
             <Nav.Link as={NavLink} to="/projects" eventKey="Projects">MY PROJECTS</Nav.Link>
+            <Nav.Link as={NavLink} to="/articles" eventKey="Articles">MY ARTICLES</Nav.Link>
 
           </Nav>
           <Nav>

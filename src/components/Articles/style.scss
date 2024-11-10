@@ -1,0 +1,71 @@
+@use '../../styles/vars' as v;
+
+.Articles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title{
+        margin: 3rem;
+        color: v.$secondary;
+    }
+
+    &-list{
+        margin: 4rem 20rem 4rem 20rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: justify;
+    }
+
+    &-card{
+        margin: 1rem;
+        &-img{
+            object-fit: contain;
+            max-height: 11rem;
+        }
+
+        &-title{
+            position: absolute;
+            top: 12rem;
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: v.$secondary;
+        }
+
+        &-text{
+            position: absolute;
+            top: 14rem;
+            width: 16rem;
+            text-align: justify;
+
+        }
+
+        &-label{
+            position: absolute;
+            top: 9rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 3rem;
+            
+            &-one{
+                margin-bottom: .2rem;
+                margin-right: 0.5rem;
+                margin-left: 0.5rem;
+            }
+        }
+
+        &-button{
+            position: absolute;
+            bottom: .5rem;
+            left: 3rem;
+        }
+    }
+
+    &-card:hover{
+        background-color: v.$light;
+        box-shadow: 4px 4px v.$dark;
+        transition-duration: 800ms;
+    }
+}
